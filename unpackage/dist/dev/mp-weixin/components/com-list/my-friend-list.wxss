@@ -1,0 +1,36 @@
+
+.myFriend-list{
+	padding:20rpx;
+	border-bottom: 1rpx solid #EEEEEE;
+}
+.myFriend-list>image{
+	width: 100rpx;
+	height: 100rpx;
+	border-radius: 50%;
+	margin-right: 20rpx;
+}
+.myFriend-list-middle{
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+}
+.myFriend-list-sex{
+	width: 80rpx;
+	height: 40rpx;
+	line-height: 40rpx;
+	border-radius: 60rpx;
+	background: #007AFF;
+	padding: 0 10rpx;
+	color: #FFFFFF;
+}
+.ac{
+	margin-right: 10rpx;
+}
+.myFriend-list-name{
+	font-size: 36rpx;
+	font-weight: bold;
+}
+.ic{
+	color: #FFB400;
+}
+

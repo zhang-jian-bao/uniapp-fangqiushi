@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "uni-list-com": "/components/uni-list-com/uni-list-com",
+    "fen-nav": "/components/tab/fen-nav",
+    "sl": "/components/sl/sl",
+    "fen-hot": "/components/fen-hot/fen-hot",
+    "com-list": "/components/com-list/com-list"
+  }
+}

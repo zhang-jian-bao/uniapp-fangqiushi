@@ -1,0 +1,44 @@
+
+.fen_xiangQin_nav.data-v-73e59a4c{
+		width: 100%;
+		height: 400rpx;
+		position: relative;
+		overflow: hidden;
+		border: 1px solid #000000;
+}
+.fen_xiangQin_nav>image.data-v-73e59a4c{
+		width: 100%;
+		position: absolute;
+		-webkit-filter: blur(10px);
+		        filter: blur(10px);
+}
+.fen_xiangQin_top.data-v-73e59a4c{
+		height: auto;
+		padding:0 20rpx;
+		position: relative;
+}
+.fen_xiangQin_top_one>image.data-v-73e59a4c{
+		width: 150rpx;
+		height: 150rpx;
+		margin-top: -75rpx;
+}
+.fen_xiangQin_top_one>view.data-v-73e59a4c{
+		font-size: 40rpx;
+		font-weight: bold;
+		margin-left: 40rpx;
+		fiex:1;
+}
+.fen_xiangQin_top_two.data-v-73e59a4c{
+		padding: 20rpx 0 20rpx;
+		height: auto;
+}
+.fen_xiangQin_top_two>view.data-v-73e59a4c{
+		font-size: 32rpx;
+		margin-right: 20rpx;
+		color: #CCCCCC;
+}
+.fen_xiangQin_top_three.data-v-73e59a4c{
+		font-size: 36rpx;
+		color: #CCCCCC;
+}
+

@@ -1,0 +1,33 @@
+
+.a.data-v-1f0f91f7,.b.data-v-1f0f91f7{
+	/* border: 1px solid #000000; */
+	width: 50%;
+	height: auto;
+	margin-left: 15rpx;
+}
+.b.data-v-1f0f91f7{
+	width: 100%;
+}
+.d.data-v-1f0f91f7{
+	/* border: 1px solid #000000; */
+	position: relative;
+}
+.ac .c.data-v-1f0f91f7{
+	width: 58rpx;
+	height: 10rpx;
+	border-radius: 6rpx;
+	background-color: red;
+	position: absolute;
+	bottom: 10rpx;
+	left: auto;
+}
+.e.data-v-1f0f91f7{
+	font-size: 30rpx;
+	font-weight: bold;
+	padding: 20rpx;
+	color: #CCCCCC;
+}
+.ac.data-v-1f0f91f7{
+	color: #000000;
+}
+

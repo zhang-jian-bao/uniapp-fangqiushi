@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "index-list": "/components/index/index-list",
+    "swiper-x": "/components/tab/scroll-x",
+    "sl": "/components/sl/sl",
+    "tu": "/components/tu/tu"
+  }
+}

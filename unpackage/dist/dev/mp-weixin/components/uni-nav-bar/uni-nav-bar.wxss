@@ -1,0 +1,128 @@
+
+.uni-nav-bar-text.data-v-f9d241d6 {
+		
+		
+		font-size: 32rpx;
+		
+}
+.uni-nav-bar-right-text.data-v-f9d241d6 {
+		font-size: 36rpx;
+		/* 右边发布按钮的样式 */
+}
+.uni-navbar__content.data-v-f9d241d6 {
+		position: relative;
+		background-color: #ffffff;
+		overflow: hidden;
+}
+.uni-navbar__content_view.data-v-f9d241d6 {
+		
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		        align-items: center;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: row;
+		        flex-direction: row;
+		/* background-color: #FFFFFF;
+ */
+}
+.uni-navbar__header.data-v-f9d241d6 {
+		
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: row;
+		        flex-direction: row;
+		height: 44px;
+		line-height: 44px;
+		font-size: 16px;
+		/* background-color: #ffffff;
+ */
+}
+.uni-navbar__header-btns.data-v-f9d241d6 {
+		
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		
+		-webkit-flex-wrap: nowrap;
+		        flex-wrap: nowrap;
+		width: 120rpx;
+		padding: 0 6px;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		        align-items: center;
+}
+.uni-navbar__header-btns-left.data-v-f9d241d6 {
+		
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		
+		width: 150rpx;
+		-webkit-box-pack: start;
+		-webkit-justify-content: flex-start;
+		        justify-content: flex-start;
+}
+.uni-navbar__header-btns-right.data-v-f9d241d6 {
+		
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		
+		width: 150rpx;
+		padding-right: 30rpx;
+		-webkit-box-pack: end;
+		-webkit-justify-content: flex-end;
+		        justify-content: flex-end;
+}
+.uni-navbar__header-container.data-v-f9d241d6 {
+		-webkit-box-flex: 1;
+		-webkit-flex: 1;
+		        flex: 1;
+}
+.uni-navbar__header-container-inner.data-v-f9d241d6 {
+		
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		
+		-webkit-box-flex: 1;
+		-webkit-flex: 1;
+		        flex: 1;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		        align-items: center;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		        justify-content: center;
+		font-size: 28rpx;
+}
+.uni-navbar__placeholder-view.data-v-f9d241d6 {
+		height: 44px;
+}
+.uni-navbar--fixed.data-v-f9d241d6 {
+		position: fixed;
+		z-index: 998;
+}
+.uni-navbar--shadow.data-v-f9d241d6 {
+		
+		box-shadow: 0 1px 6px #ccc;
+		
+}
+.uni-navbar--border.data-v-f9d241d6 {
+		border-bottom-width: 1rpx;
+		border-bottom-style: solid;
+		border-bottom-color: #e5e5e5;
+}
+

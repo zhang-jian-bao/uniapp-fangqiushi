@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "话题分类",
+  "usingComponents": {
+    "swiper-x": "/components/tab/scroll-x",
+    "sl": "/components/sl/sl",
+    "tu": "/components/tu/tu",
+    "com-list": "/components/com-list/com-list"
+  }
+}

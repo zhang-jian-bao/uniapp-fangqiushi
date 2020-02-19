@@ -1,0 +1,1 @@
+<view class="liaoTian-send u_dis"><input type="text" placeholder="请输入要发送的内容" data-event-opts="{{[['input',[['__set_model',['','text','$event',[]]]]]]}}" value="{{text}}" bindinput="__e"/><view data-event-opts="{{[['tap',[['liaoTiao_input',['$event']]]]]}}" class="icon iconfont icon-fabu" bindtap="__e"></view></view>

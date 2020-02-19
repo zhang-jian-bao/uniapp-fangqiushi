@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "聊天页",
+  "usingComponents": {
+    "liao-tian-input": "/components/liaoTian-input/liaoTian-input",
+    "liao-tian-input-list": "/components/liaoTian-input/liaoTian-input-list"
+  }
+}

@@ -1,0 +1,263 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				
+				//5+app头部导航配置为搜索框（看文档）
+				"app-plus":{
+					"bounce":"none",//上下拉没有反弹效果
+					"scrollIndicator":"none",//滚动条不显示
+					"titleNView":{//导航栏
+						"searchInput":{//搜索框	
+							"align":"center",
+							"placeholder":"搜索糗事",
+							"backgroundColor":"#F7F7F7",
+							"borderRadius":"12px",
+							"placeholderColor":"#cccccc",
+							"disabled":"true"
+						},
+						"buttons":[//搜索框左右按钮	
+							{//左边按钮
+								"color":"#FF9625",
+								"colorPressed":"#BBBBBB",
+								"float":"left",
+								"fontSize":"22px",
+								"fontSrc":"/static/font/iconfont.ttf",
+								"text":"\ue609"
+							},
+							{//右边按钮
+								"color":"#000000",
+								"colorPressed":"#BBBBBB",
+								"float":"right",
+								"fontSize":"22px",
+								"fontSrc":"/static/font/iconfont.ttf",
+								"text":"\ue653"
+							}
+						
+							
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/fen/fen",
+			"style": {
+				// "navigationBarTitleText": "动态",
+				"app-plus":{
+					"titleNView":"false"//禁止原生导航，在自定义一个导航，hello模板中有
+				}
+			}
+		},
+		{
+			"path": "pages/xiaoZhiTiao/xiaoZhiTiao",
+			"style": {
+				"enablePullDownRefresh":true,//下拉刷新
+				"navigationBarTitleText": "小纸条",
+				"app-plus":{
+					"bounce":"none",//上下拉没有反弹效果
+					"scrollIndicator":"none",//滚动条不显示
+					"titleNView":{//导航栏
+						"buttons":[//搜索框左右按钮	
+							{//左边按钮
+								"color":"#000000",
+								"colorPressed":"#BBBBBB",
+								"float":"left",
+								"fontSize":"22px",
+								"fontSrc":"/static/font/iconfont.ttf",
+								"text":"\ue845"
+							},
+							{//右边按钮
+								"color":"#000000",
+								"colorPressed":"#BBBBBB",
+								"float":"right",
+								"fontSize":"22px",
+								"fontSrc":"/static/font/iconfont.ttf",
+								"text":"\ue684"
+							}
+						
+							
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/search/search",
+			"style": {
+				
+				//5+app头部导航配置为搜索框（看文档）
+				"app-plus":{
+					"bounce":"none",//上下拉没有反弹效果
+					"scrollIndicator":"none",//滚动条不显示
+					"titleNView":{//导航栏
+						"autoBackButton":"false",
+						"searchInput":{//搜索框	
+							"align":"left",
+							"placeholder":"搜索糗事",
+							"backgroundColor":"#F7F7F7",
+							"borderRadius":"12px",
+							"placeholderColor":"#cccccc",
+							"disabled":"true"
+						},
+						"buttons":[//搜索框左右按钮	
+							{//右边按钮
+								"color":"#000000",
+								"colorPressed":"#BBBBBB",
+								"float":"right",
+								"fontSize":"16px",
+								"text":"取消"
+							}
+						
+							
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/add-input/add-input",
+			"style": {
+				"app-plus":{
+					"titleNView":"false"//禁止原生导航，在自定义一个导航，hello模板中有
+				}
+			}
+		},
+		{
+			"path": "pages/huaTi-fen/huaTi-fen",
+			"style": {
+				"navigationBarTitleText":"话题分类",
+				"app-plus":{
+					"bounce":"true"//禁止原生导航，在自定义一个导航，hello模板中有
+				}
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText":"登录页"
+			}
+		},
+		{
+			"path": "pages/ceshi/csshi",
+			"style": {
+				"navigationBarTitleText":"测试页"
+			}
+		},
+		{
+			"path": "pages/fen_xiangQin/fen_xiangQin",
+			"style": {
+				"enablePullDownRefresh":true,//开启下拉刷新
+				"navigationBarTitleText":"我是分类详情页",
+				"app-plus":{
+					"scrollIndicator":"none",//隐藏滚动条
+					"titleNView":{
+						"type":"transparent",//透明渐变
+						"buttons":[
+							{
+								"type":"menu"//导航菜单按钮
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/myFriend/myFriend",
+			"style": {
+				//5+app头部导航配置为搜索框（看文档）
+				"app-plus":{
+					"animationType":"slide-in-left",//进入页面的动画效果
+					"bounce":"none",//上下拉没有反弹效果
+					"scrollIndicator":"none",//滚动条不显示
+					"titleNView":{//导航栏
+						"autoBackButton":"false",
+						"searchInput":{//搜索框	
+							"align":"left",
+							"placeholder":"搜索糗事",
+							"backgroundColor":"#F7F7F7",
+							"borderRadius":"12px",
+							"placeholderColor":"#cccccc",
+							"disabled":"true"
+						},
+						"buttons":[//搜索框左右按钮	
+							{//右边按钮
+								"color":"#000000",
+								"colorPressed":"#BBBBBB",
+								"float":"right",
+								"fontSize":"16px",
+								"text":"取消"
+							}
+						
+							
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/liaoTian/liaoTian",
+			"style": {
+				"navigationBarTitleText":"聊天页",
+				"app-plus":{
+					"titleNView":{
+						"buttons":[
+							{
+								"color":"#000000",
+								"colorPressed":"#BBBBBB",
+								"float":"right",
+								"fontSize":"22px",
+								"fontSrc":"/static/font/iconfont.ttf",
+								"text":"\ue628"
+							}
+						]
+					}
+				}
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "仿糗事百科",
+		"navigationBarBackgroundColor": "#ffffff"
+	},
+	"tabBar":{
+		"color":"#ccc",
+		"selectedColor":"#FEE42A",
+		"borderStyle":"black",
+		"backgroundColor":"#fff",
+		"list":[
+			{
+				"pagePath":"pages/index/index",
+				"iconPath":"/static/icon/index_one.png",
+				"selectedIconPath":"/static/icon/index.png",
+				"text":"糗事"
+			},
+			{
+				"pagePath":"pages/fen/fen",
+				"iconPath":"/static/icon/fen_one.png",
+				"selectedIconPath":"/static/icon/fen.png",
+				"text":"动态"
+			},
+			{
+				"pagePath":"pages/xiaoZhiTiao/xiaoZhiTiao",
+				"iconPath":"/static/icon/liao_one.png",
+				"selectedIconPath":"/static/icon/liao.png",
+				"text":"小纸条"
+			},
+			{
+				"pagePath":"pages/my/my",
+				"iconPath":"/static/icon/my_one.png",
+				"selectedIconPath":"/static/icon/my.png",
+				"text":"我的"
+			}
+		]
+	}
+}

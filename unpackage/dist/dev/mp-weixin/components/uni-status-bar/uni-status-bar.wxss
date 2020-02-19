@@ -1,0 +1,8 @@
+
+.uni-status-bar.data-v-5cd20adb {
+		width: 750rpx;
+		height: 20px;
+		/* height: var(--status-bar-height);
+ */
+}
+

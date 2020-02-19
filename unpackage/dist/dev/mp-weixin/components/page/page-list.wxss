@@ -1,0 +1,43 @@
+
+.xiaoZhiTiao{
+	width: 94%;
+	height: 100%;
+	padding: 0 20rpx;
+}
+page{
+	height: 100%;
+}
+.xiaoZhiTiao_list{
+	height: auto;
+	width: 100%;
+	padding: 20rpx 0;
+	border-bottom: 1px solid #EEEEEE;
+}
+.xiaoZhiTiao_list>image{
+	width: 100rpx;
+	height: 100rpx;
+	border-radius: 50%;
+	-webkit-flex-shrink: 0;
+	        flex-shrink: 0;/*图片不会受到挤压*/
+	margin-right: 20rpx;
+}
+.xiaoZhiTiao_right{
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+}
+.xiaoZhiTiao_top{
+	font-size: 36rpx;
+	font-weight: bold;
+}
+.xiaoZhiTiao_top>view:first-child{
+	color: #999999;
+}
+.xiaoZhiTiao_bottom_one{
+	/* border: 1px solid #000000; */
+	width: 440rpx;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+

@@ -1,0 +1,22 @@
+
+.huaTi-list-right>view:first-child{
+	font-size: 30rpx;
+	color: #000000;
+	/* border: 1px solid #000000; */
+}
+.huaTi-list-right{
+	color: #CCCCCC;
+	margin-left: 30rpx;
+	/* border: 1px solid #000000; */
+}
+.huaTi-list>image{
+	width: 200rpx;
+	height: 200rpx;
+	border-radius: 20rpx;
+}
+.huaTi-list{
+	height: auto;
+	padding:30rpx;
+	border-bottom: 1px solid #CCCCCC;
+}
+

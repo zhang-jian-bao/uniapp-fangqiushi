@@ -1,0 +1,25 @@
+
+.liaoTian-send{
+	height: 140rpx;
+	padding: 0 20rpx;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-top: 1px solid #EEEEEE;
+}
+.liaoTian-send>input{
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+	height: 70rpx;
+	border: 1rpx solid #EEEEEE;
+	border-radius: 60rpx;
+	padding-left: 20rpx;
+	margin-right: 20rpx;
+}
+.liaoTian-send>view{
+	width: 80rpx;
+	font-size: 50rpx;
+}
+

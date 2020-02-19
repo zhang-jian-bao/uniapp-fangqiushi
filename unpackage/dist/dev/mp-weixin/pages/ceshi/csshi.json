@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "测试页",
+  "usingComponents": {
+    "uni-list-com": "/components/uni-list-com/uni-list-com"
+  }
+}

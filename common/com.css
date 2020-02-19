@@ -1,0 +1,21 @@
+	.u_dis,.u_dis_b,.u_dis_c,.u_dis_s{
+			display: flex;
+			align-items: center;
+		}
+	.u_dis_s{
+		justify-content: space-around;
+	}
+	.u_dis_b{
+			justify-content: space-between;
+		}
+	.u_dis_c{
+		justify-content: center;
+		text-align: center;
+	}
+	.u_dis_f{
+		display: flex;
+	}
+	.u_dis_fb{
+		display: flex;
+		justify-content: space-between;
+	}

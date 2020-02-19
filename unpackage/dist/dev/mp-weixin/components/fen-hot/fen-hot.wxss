@@ -1,0 +1,20 @@
+
+.huaTi-hot-bottom view{
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+	background-color: #EEEEEE;
+	color: #CCCCCC;
+	margin: 20rpx 10rpx;
+	text-align: center;
+	border-radius: 10rpx;
+}
+.huaTi-hot-top-right{
+	color: #EEEEEE;
+}
+.huaTi-hot{
+	margin: 20rpx 0;
+	border-top: 1px solid #EEEEEE;
+	border-bottom: 1px solid #EEEEEE;
+}
+

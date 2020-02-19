@@ -1,0 +1,10 @@
+{
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "我是分类详情页",
+  "usingComponents": {
+    "fen-x-q": "/components/com-list/fen_xQ",
+    "swiper-x": "/components/tab/scroll-x",
+    "uni-list-com": "/components/uni-list-com/uni-list-com",
+    "sl": "/components/sl/sl"
+  }
+}

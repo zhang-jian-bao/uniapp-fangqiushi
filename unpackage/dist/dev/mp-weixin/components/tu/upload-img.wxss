@@ -1,0 +1,23 @@
+
+.uni-uploader__file.data-v-b3f79e5e{
+	position: relative;
+}
+.icon-shanchu.data-v-b3f79e5e{
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 1;
+	padding: 2rpx 10rpx;
+	background:rgba(238,238,238,.4)
+}
+.uni_textarea.data-v-b3f79e5e{
+	border: 1rpx solid #EEEEEE;
+	padding: 20rpx;
+}
+.cell-pd.data-v-b3f79e5e {
+	padding: 22rpx 30rpx;
+}
+.list-pd.data-v-b3f79e5e {
+	margin-top: 50rpx;
+}
+

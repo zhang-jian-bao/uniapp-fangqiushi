@@ -1,0 +1,17 @@
+
+.popup-content {
+		
+		display: block;
+		
+		background-color: #fff;
+		padding: 15px;
+		font-size: 14px;
+}
+.popup-content-one image{
+	width: 50%;
+}
+.popup-content button{
+	background-color: yellow;
+	color: #000000;
+}
+
