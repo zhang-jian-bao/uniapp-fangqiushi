@@ -15,7 +15,7 @@
 		                           	<!-- 图文列表 -->
 		                           	<block v-for="(item,key) in items.list"
 		                           	 :key="key">
-		                           		<index-list :item="item" :key="index">
+		                           		<index-list :item="item" :index="key">
 		                           		</index-list>
 		                           	</block>
 		                           	<!-- 上拉加载刷新 -->
@@ -229,7 +229,8 @@
 			        let height = res.windowHeight-uni.upx2px(100)
 			        this.swiperheight = height;
 			    },
-			})
+			});
+			this.getNav();
 		},
 		//点击搜索框，跳转搜索页面
 		onNavigationBarSearchInputClicked() {
@@ -253,6 +254,15 @@
 			}
 		},
 		methods: {
+			//获取文章分类
+			getNav(){
+				uni.request({
+					url: this.config.webUrl+'/postclass',
+					method: 'GET',
+					success: res => {},
+					fail: () => {},
+				});
+			},
 			sl(index){//上拉加载时
 			console.log(this.newslist[index].loadtext)
 				if(this.newslist[index].loadtext!="上拉加载更多"){

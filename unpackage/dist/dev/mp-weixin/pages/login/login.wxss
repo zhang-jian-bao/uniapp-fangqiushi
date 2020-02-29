@@ -1,0 +1,236 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 验证码登录框布局 */
+.my-login-yzm.data-v-f0ebf4fa{
+	padding: 20rpx;
+}
+.my-login-yzm-one.data-v-f0ebf4fa{
+	border-bottom: 1rpx solid #EEEEEE;
+}
+.my-login-yzm-one>input.data-v-f0ebf4fa{
+	-webkit-box-flex:1;
+	-webkit-flex:1;
+	        flex:1;
+	padding: 20rpx 20rpx;
+}
+.my-login-yzm-two.data-v-f0ebf4fa{
+	background-color: #EEEEEE;
+	color: #BEBEBE;
+	padding: 10rpx 10rpx;
+	border-radius: 10rpx;
+}
+.my-login-yzm-one-num.data-v-f0ebf4fa{
+	font-size: 40rpx;
+	font-weight: bold;
+}
+/* 注册协议 */
+.my-login-zhu.data-v-f0ebf4fa{
+	margin: 30rpx 0;
+	color: #BEBEBE;
+}
+.my-login-zhu>view.data-v-f0ebf4fa{
+	color: #007AFF;
+}
+/* 第三方登录布局 */
+.my-login-three.data-v-f0ebf4fa{
+	color: #BEBEBE;
+	margin-bottom: 30rpx;
+}
+/* 验证码登录布局 */
+.my-login-yan.data-v-f0ebf4fa{
+	margin: 20rpx;
+}
+/* 登录按钮布局 */
+.btn.data-v-f0ebf4fa{
+	width: 80%;
+	border: none;
+	margin-top: 40rpx;
+	background-color: #F0AD4E;
+	color: #000000;
+}
+.disable.data-v-f0ebf4fa{
+	background-color: #CCCCCC;
+	color: #7A7A7A;
+}
+/* 登录input框布局 */
+.my-login-input.data-v-f0ebf4fa{
+	padding: 20rpx;
+}
+.my-login-input input.data-v-f0ebf4fa{
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+	padding: 20rpx 0;
+}
+.my-login-input-two.data-v-f0ebf4fa{
+	border-top: 1rpx solid #EEEEEE;
+	border-bottom: 1rpx solid #EEEEEE;
+}
+/* 左上角X图标布局 */
+.icon-guanbi.data-v-f0ebf4fa{
+	position: fixed;
+	left: 40rpx;
+	top: 80rpx;
+	font-size: 40rpx;
+	font-weight: bold;
+}
+/* 导航栏下的图片 */
+.my-login-nav-img>image.data-v-f0ebf4fa{
+	width: 100%;
+}
+

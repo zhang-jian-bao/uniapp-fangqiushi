@@ -1,3 +1,8 @@
 {
-  "usingComponents": {}
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "sl": "/components/sl/sl",
+    "index-list": "/components/index/index-list",
+    "tu": "/components/tu/tu"
+  }
 }

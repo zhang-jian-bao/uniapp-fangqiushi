@@ -1,0 +1,9 @@
+
+.btn.data-v-735973bd{
+	width: 80%;
+	border: none;
+	margin-top: 40rpx;
+	background-color: #F0AD4E;
+	color: #000000;
+}
+

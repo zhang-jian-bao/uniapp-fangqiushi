@@ -1,0 +1,108 @@
+
+.uni-share.data-v-afc51ed6{
+			padding: 30rpx 0;
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-box-align: center;
+			-webkit-align-items: center;
+			        align-items: center;
+			background-color: #EEEEEE;
+			border-radius: 20rpx;
+}
+.uni-share>image.data-v-afc51ed6{
+			width: 200rpx;
+			margin-right: 30rpx;
+			border-radius: 14rpx;
+}
+.uni-four.data-v-afc51ed6{
+			position: relative;
+			overflow: hidden;
+}
+.uni-play.data-v-afc51ed6{
+			position: absolute;
+			font-size: 100rpx;
+			color: #FFFFFF;
+}
+.uni-play-num.data-v-afc51ed6{
+			position: absolute;
+			right: 20rpx;
+			bottom: 10rpx;
+			background:rgba(0,0,0,.8);
+			width: auto;
+			padding: 10rpx 20rpx;
+			border-radius: 30rpx;
+			color: #FFFFFF;
+			font-size: 20rpx;
+}
+.uni-common-list.data-v-afc51ed6{
+			padding:20rpx 20rpx;
+			height: auto;
+}
+.uni-common-list>image.data-v-afc51ed6{
+			width: 100rpx;
+			height: 100rpx;
+			border-radius: 50%;
+}
+.un-common-list-right.data-v-afc51ed6{
+			width: 80%;
+			padding: 0 20rpx;
+			/* border: 1px solid #000000; */
+			border-bottom: 1rpx solid #CCCCCC;
+}
+.un-common-list-right-two>view.data-v-afc51ed6:first-child{
+			color: #CCCCCC;
+			font-size: 40rpx;
+			margin-right: 20rpx;
+}
+.uni-one.data-v-afc51ed6{
+			width: auto;
+			padding: 0 20rpx;
+			background-color: #007AFF;
+			color: #FFFFFF;
+			border-radius: 60rpx;
+}
+.uni-one>view.data-v-afc51ed6:first-child{
+			margin-right: 10rpx;
+			font-size: 20rpx;
+}
+.uni-two.data-v-afc51ed6{
+			background-color: #CCCCCC;
+			border-radius: 0;
+			color: #000000;
+			float: right;
+}
+.uni-three.data-v-afc51ed6{
+			height: auto;
+			font-size: 40rpx;
+}
+.uni-four>image.data-v-afc51ed6{
+			width: 100%;
+}
+.un-common-list-right-three.data-v-afc51ed6{
+			font-size: 30rpx;
+			color: #CCCCCC;
+			height: 80rpx;
+}
+.uni-free.data-v-afc51ed6{
+			color: #CCCCCC;
+}
+.uni-free>view.data-v-afc51ed6:first-child{
+			margin-right: 10rpx;
+}
+.uni-six-one.data-v-afc51ed6{
+			margin-left: 10rpx;
+}
+.uni-six-one>view.data-v-afc51ed6:first-child{
+			margin-right: 10rpx;
+}
+.uni-common-list.data-v-afc51ed6{
+	border-bottom: 1rpx solid #EEEEEE;
+}
+.un-common-list-right.data-v-afc51ed6{
+	border: none;
+}
+.uni-two-time.data-v-afc51ed6{
+	color: #CCCCCC;
+}
+

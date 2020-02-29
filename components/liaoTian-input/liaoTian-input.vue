@@ -26,10 +26,10 @@
 		height: 140upx;
 		padding: 0 20upx;
 		position: fixed;
-		z-index: 2000;
 		bottom: 0;
 		left: 0;
 		right: 0;
+		z-index: 10000;
 		border-top: 1px solid #EEEEEE;
 	}
 	.liaoTian-send>input{

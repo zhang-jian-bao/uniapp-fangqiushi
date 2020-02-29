@@ -3,7 +3,7 @@
 		<!-- 一个大的透明的div,点击空白处，隐藏 -->
 		<view class="xiaoZhiTiao-show" v-show="show" @click="bigShow"></view>
 		<!-- 点击右上角显示 -->
-		<view class="xiaoZhiTiao_fiexd" v-show="show">
+		<view class="xiaoZhiTiao_fiexd animated fadeInRight fast" v-show="show">
 			<view class="xiaoZhiTiao_fiexd_top u_dis" hover-class="ac"
 			@click="jiaQiuYou">
 				<view class="iconfont icon-sousuo ic"></view>

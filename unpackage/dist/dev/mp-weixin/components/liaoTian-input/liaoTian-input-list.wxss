@@ -46,7 +46,6 @@
 		margin-right: 30rpx;
 		margin-left: 100rpx;
 		border: 1rpx solid #0A98D5;
-		color: #FFFFFF;
 }
 .liaoTian-con-me .liaoTian-aa.data-v-a87ce4c0:after{
 		left: auto;

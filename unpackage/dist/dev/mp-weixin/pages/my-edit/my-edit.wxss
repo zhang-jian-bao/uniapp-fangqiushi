@@ -1,0 +1,150 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 列表样式 */
+.my-edit-list.data-v-fb424972{
+	padding: 20rpx;
+	border-bottom: 1rpx solid #EEEEEE;
+}
+.my-edit-name.data-v-fb424972{
+	font-size: 40rpx;
+	color: #C0C0C0;
+}
+.my-edit-con.data-v-fb424972{
+	-webkit-box-flex:1;
+	-webkit-flex:1;
+	        flex:1;
+	text-align: right;
+	padding-right: 20rpx;
+	font-size: 36rpx;
+}
+.my-edit-con>image.data-v-fb424972{
+	width: 100rpx;
+	height: 100rpx;
+	border-radius: 50%;
+}
+.more-bianji.data-v-fb424972{
+	color: #C0C0C0;
+}
+/* 按钮 */
+.btn.data-v-fb424972{
+	width: 80%;
+	border: none;
+	margin-top: 40rpx;
+	background-color: #F0AD4E;
+	color: #000000;
+}
+

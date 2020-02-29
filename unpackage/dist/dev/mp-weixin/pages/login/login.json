@@ -1,4 +1,7 @@
 {
   "navigationBarTitleText": "登录页",
-  "usingComponents": {}
+  "usingComponents": {
+    "uni-status-bar": "/components/uni-status-bar/uni-status-bar",
+    "my-icon": "/components/my-login/my-icon"
+  }
 }

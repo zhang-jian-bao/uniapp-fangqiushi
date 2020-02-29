@@ -2,8 +2,9 @@
   "enablePullDownRefresh": true,
   "navigationBarTitleText": "小纸条",
   "usingComponents": {
-    "page-list": "/components/page/page-list",
+    "caoZuoMeun": "/components/caoZuoMeun/caoZuoMeun",
     "sl": "/components/sl/sl",
+    "page-list": "/components/page/page-list",
     "cao-zuo-meun": "/components/caoZuoMeun/caoZuoMeun"
   }
 }

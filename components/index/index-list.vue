@@ -14,7 +14,7 @@
 		<view class="index-list2">
 			{{item.title}}
 		</view>
-		<view class="index-list3 u_dis">
+		<view class="index-list3 u_dis" @click="con_list">
 			<image :src="item.titlePic" mode="widthFix" lazy-load></image>
 			<template v-if="item.type=='video'">
 				<view class="iconfont icon-bofang"></view>
@@ -48,6 +48,12 @@
 			}
 		},
 		methods:{
+			con_list(){//点击跳转到内容页
+				var item=JSON.stringify(this.item);//因为item是对象或数组要转换为字符串
+				uni.navigateTo({
+					url:'/pages/con-list/con-list?item='+item
+				})
+			},
 			guanZhu(){//点击关注，隐藏，isGuanZhu 为true
 				this.isGuanZhu=true;
 				uni.showToast({//弹框

@@ -1,1 +1,1 @@
-<view class="a"><block wx:for="{{huaTiList}}" wx:for-item="item" wx:for-index="index" wx:key="index"><block><view class="a"><block wx:for="{{item.list}}" wx:for-item="a" wx:for-index="b" wx:key="b"><block><uni-list-com vue-id="{{'1-'+index+'-'+b}}" item="{{a}}" index="{{b}}" bind:__l="__l"></uni-list-com></block></block></view></block></block></view>
+<view class="a"><my-icon vue-id="1" bind:__l="__l"></my-icon></view>

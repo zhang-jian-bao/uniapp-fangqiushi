@@ -1,0 +1,336 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 分享布局 */
+.uni-more-share.data-v-0584877b{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background:rgba(0,0,0,.5);
+	z-index: 10000;
+}
+.uni-more-share-body.data-v-0584877b{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: auto;
+	background-color: #FFFFFF;
+	padding:0 20rpx;
+	z-index: 14000;
+}
+.uni-more-share-top.data-v-0584877b{/*分享到和取消布局*/
+	font-size: 40rpx;
+	font-weight: bold;
+	padding: 20rpx 0;
+}
+.uni-more-share-con.data-v-0584877b{
+	border-bottom: 1rpx solid #EEEEEE;
+	/* border-top: 1upx solid #EEEEEE; */
+	padding: 20rpx 0;
+}
+.scrollX.data-v-0584877b{/*横向滑动布局*/
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: nowrap;
+	        flex-wrap: nowrap;
+	width: 100%;
+	height: 100%;
+	/* align-items: center; */
+	line-height:150rpx;
+}
+.uni-more-share-icon.data-v-0584877b{
+	width: 25%;
+	height: 100%;
+	display: -webkit-inline-box;
+	display: -webkit-inline-flex;
+	display: inline-flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+}
+.uni-more-share-icon>view.data-v-0584877b:first-child{
+	width: 100rpx;
+	height: 100rpx;
+	border-radius: 50%;
+	border: 1rpx solid #EEEEEE;
+	font-size: 50rpx;
+	color: #FFFFFF;
+}
+.uni-more-share-icon>view.data-v-0584877b:last-child{
+	color: #7a7a7a;
+}
+.active.data-v-0584877b{
+	background-color: #EFEFF4;
+}
+.more-weixin.data-v-0584877b{
+	background-color: #2ad198;
+}
+.more-qq.data-v-0584877b{
+	background-color: #4a73ba;
+}
+.more-xinlangweibo.data-v-0584877b{
+	background-color: #ee5e5e;
+}
+
+

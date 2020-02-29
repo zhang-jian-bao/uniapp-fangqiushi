@@ -1,5 +1,31 @@
 //封装时间格式的js文件
 const gettime={
+	//计算当前的日期星座
+	getHroscope(data){
+		let c=['魔蝎','水瓶','双鱼','金牛','双子','巨蟹','狮子','处女','天秤',
+		'天蝎','射手','白羊'];
+		let date=new Date(data);
+		let month=date.getMonth()+1;
+		let day=date.getDate();
+		let statrMonth=month-(day-14<'865778999988'.charAt(month));
+		return c[statrMonth]+'座';
+	},
+	//计算年龄指定时间与当前的时间差
+	sumAge(data){
+		let dateBegin=new Date(data.replace(/-/g,'/'));
+		let dateEnd=new Date();//获取当前的时间
+		let dateDiff=dateEnd.getTime()-dateBegin.getTime();//时间差的毫秒数
+		let dayDiff=Math.floor(dateDiff/(24*3600*1000));//计算出相差的天数3600=24*60*60
+		let leave1=dateDiff%(24*3600*1000);//计算天数后的剩余毫秒数
+		let hours=Math.floor(leave1/(3600*1000));//计算出小时数
+		let leave2=leave1%(3600*1000);//计算出小时后的毫秒数
+		let minutes=Math.floor(leave2/(60*1000));//计算相差的分钟数
+		let leave3=leave2%(60*1000);//计算相差的分钟数后的毫秒数
+		let seconds=Math.round(leave3/1000);//计算秒
+		return dayDiff+'天'+hours+'小时'+minutes+'分钟'+seconds+'秒';
+	},
+	
+	
 	//获取聊天的时间(相差300s内的信息不会显示时间)
 	getChatTime(v1,v2){
 		//PHP写的时间戳是10位,服务器的是13位

@@ -1,0 +1,15 @@
+
+.my-about-log{
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	padding: 20rpx;
+}
+.my-about-log>image{
+	width: 400rpx;
+}
+.my-about-log>view{
+	color: #BEBEBE;
+}
+

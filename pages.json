@@ -1,5 +1,6 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		
 		{
 			"path": "pages/index/index",
 			"style": {
@@ -15,7 +16,7 @@
 							"backgroundColor":"#F7F7F7",
 							"borderRadius":"12px",
 							"placeholderColor":"#cccccc",
-							"disabled":"true"
+							"disabled":"true"//搜索框不能输入内容
 						},
 						"buttons":[//搜索框左右按钮	
 							{//左边按钮
@@ -56,6 +57,8 @@
 				"enablePullDownRefresh":true,//下拉刷新
 				"navigationBarTitleText": "小纸条",
 				"app-plus":{
+					"animationType":"slide-in-left",//动画效果
+					// "animationDuration":200,//动画时间
 					"bounce":"none",//上下拉没有反弹效果
 					"scrollIndicator":"none",//滚动条不显示
 					"titleNView":{//导航栏
@@ -86,15 +89,35 @@
 		{
 			"path": "pages/my/my",
 			"style": {
-				"navigationBarTitleText": "我的"
+				"navigationBarTitleText": "我的",
+				"app-plus":{
+					// "animationDuration":200,//动画时间
+					"animationType":"slide-in-left",//动画效果
+					"bounce":"none",//没有上下反弹效果
+					"scrollIndicator":"none",//不显示滚动条
+					"titleNView":{
+						"buttons":[
+							
+							{//右边按钮
+								"color":"#000000",
+								"colorPressed":"#BBBBBB",
+								"float":"right",
+								"fontSize":"22px",
+								"type":"menu"//菜单按钮样式
+							}
+						]
+					}
+				}
 			}
 		},
 		{
 			"path": "pages/search/search",
 			"style": {
-				
+				"enablePullDownRefresh":true,//开启下拉刷新
 				//5+app头部导航配置为搜索框（看文档）
 				"app-plus":{
+					"animationType":"slide-in-bottom",//动画效果
+					// "animationDuration":200,//动画时间
 					"bounce":"none",//上下拉没有反弹效果
 					"scrollIndicator":"none",//滚动条不显示
 					"titleNView":{//导航栏
@@ -104,8 +127,7 @@
 							"placeholder":"搜索糗事",
 							"backgroundColor":"#F7F7F7",
 							"borderRadius":"12px",
-							"placeholderColor":"#cccccc",
-							"disabled":"true"
+							"placeholderColor":"#cccccc"
 						},
 						"buttons":[//搜索框左右按钮	
 							{//右边按钮
@@ -142,13 +164,14 @@
 		{
 			"path": "pages/login/login",
 			"style": {
-				"navigationBarTitleText":"登录页"
-			}
-		},
-		{
-			"path": "pages/ceshi/csshi",
-			"style": {
-				"navigationBarTitleText":"测试页"
+				"navigationBarTitleText":"登录页",
+				"app-plus":{
+					// "animationDuration":200,//动画时间
+					"animationType":"slide-in-bottom",//动画效果
+					"bounce":"none",//禁止反弹
+					"scrollIndicator":"none",//禁止滚动条显示
+					"titleNView":false//取消原生导航栏，自定义一个
+				}
 			}
 		},
 		{
@@ -175,6 +198,7 @@
 				//5+app头部导航配置为搜索框（看文档）
 				"app-plus":{
 					"animationType":"slide-in-left",//进入页面的动画效果
+					// "animationDuration":200,//动画时间
 					"bounce":"none",//上下拉没有反弹效果
 					"scrollIndicator":"none",//滚动条不显示
 					"titleNView":{//导航栏
@@ -207,6 +231,8 @@
 			"style": {
 				"navigationBarTitleText":"聊天页",
 				"app-plus":{
+					// "animationDuration":200,//动画时间
+					"animationType":"slide-in-bottom",//动画效果
 					"titleNView":{
 						"buttons":[
 							{
@@ -221,8 +247,113 @@
 					}
 				}
 			}
+		},
+		{
+			"path": "pages/con-list/con-list",
+			"style": {
+				"navigationBarTitleText":"内容页",
+				"app-plus":{
+					"bounce":"none",//禁止回弹
+					"scrollIndicator":"none",//滚动条不显示
+					"titleNView":{
+						"buttons":[
+							{
+								"type":"menu"//菜单按钮
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/my/my-sheZhi",
+			"style": {
+				"navigationBarTitleText":"设置页",
+				"app-plus":{
+					"bounce":"none",//取消反弹
+					"scrollIndicator":"none"//不显示滚动条
+				}
+			}
+		},
+		{
+			"path": "pages/my/my-sheZhi-password",
+			"style": {
+				"navigationBarTitleText":"修改密码",
+				"app-plus":{
+					"bounce":"none",//取消反弹
+					"scrollIndicator":"none"//不显示滚动条
+				}
+			}
+		},
+		{
+			"path": "pages/my/my-email",
+			"style": {
+				"navigationBarTitleText":"绑定邮箱",
+				"app-plus":{
+					"bounce":"none",//取消反弹
+					"scrollIndicator":"none"//不显示滚动条
+				}
+			}
+		},
+		{
+			"path": "pages/my-edit/my-edit",
+			"style": {
+				"navigationBarTitleText":"修改资料",
+				"app-plus":{
+					"bounce":"none",//取消反弹
+					"scrollIndicator":"none"//不显示滚动条
+				}
+			}
+		},
+		{
+			"path": "pages/my-feedback/my-feedback",
+			"style": {
+				"navigationBarTitleText":"意见反馈",
+				"app-plus":{
+					"bounce":"none",//取消反弹
+					"scrollIndicator":"none"//不显示滚动条
+				}
+			}
+		},
+		{
+			"path": "pages/my-about/my-about",
+			"style": {
+				"navigationBarTitleText":"关于访糗百",
+				"app-plus":{
+					"bounce":"none",//取消反弹
+					"scrollIndicator":"none"//不显示滚动条
+				}
+			}
+		},
+			{
+            "path" : "pages/myKong/myKong",
+            "style" : {
+				"navigationBarTitleText":"我的空间",
+				"app-plus":{
+					"bounce":"none",//没有反弹效果
+					"scrollIndicator":"none",//不显示滚动条
+					"titleNView":{
+						"type":"transparent",//透明
+						"buttons":[
+							{
+								"type":"menu"//菜单按钮
+							}
+						]
+					}
+				}
+			}
+        },
+        {
+            "path" : "components/my-kong/my-kong",
+            "style" : {}
+        },
+		{
+			"path": "pages/ceshi/csshi",
+			"style": {
+				"navigationBarTitleText":"测试页"
+			}
 		}
-	],
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "仿糗事百科",

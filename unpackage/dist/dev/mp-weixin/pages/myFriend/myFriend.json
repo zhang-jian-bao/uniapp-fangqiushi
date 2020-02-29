@@ -1,8 +1,8 @@
 {
   "usingComponents": {
+    "sl": "/components/sl/sl",
     "scroll-x": "/components/tab/scroll-x",
     "my-friend-list": "/components/com-list/my-friend-list",
-    "tu": "/components/tu/tu",
-    "sl": "/components/sl/sl"
+    "tu": "/components/tu/tu"
   }
 }

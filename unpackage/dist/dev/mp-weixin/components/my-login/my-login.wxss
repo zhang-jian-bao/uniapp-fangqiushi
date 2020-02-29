@@ -1,0 +1,56 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 登录后的样式 */
+.my-login{
+	padding: 20rpx 40rpx;
+}
+.my-login>image{
+	width: 100rpx;
+	height: 100rpx;
+	border-radius: 50%;
+}
+.my-login-con{
+	-webkit-box-flex:1;
+	-webkit-flex:1;
+	        flex:1;
+	/* border: 1upx solid #000000; */
+	padding-left: 30rpx;
+}
+.my-login-top{
+	font-size: 40rpx;
+	font-weight: bold;
+}
+.my-login-bottom{
+	color: #BEBEBE;
+	font-size: 35rpx;
+}
+.my-login-bottom>view{
+	margin-right: 20rpx;
+}
+.more-login{
+	font-size: 40rpx;
+}
+
+

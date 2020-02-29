@@ -101,12 +101,12 @@
 		onNavigationBarButtonTap(e) {
 			switch (e.index){
 				case 0://左边按钮
-					uni.navigateTo({//跳转到好友页面
+					this.User.navigate({//跳转到好友页面
 						url:'/pages/myFriend/myFriend'
 					})
 					break;
 				case 1://右边按钮
-					this.show=true;//显示
+					this.show=!this.show;//显示
 					break;
 				default:
 					break;

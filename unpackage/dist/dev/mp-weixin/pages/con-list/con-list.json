@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "内容页",
+  "usingComponents": {
+    "pin-lun": "/components/pin-lun/pin-lun",
+    "share-list": "/components/share-list/share-list",
+    "con-list": "/components/uni-list-com/con-list",
+    "liao-tian-input": "/components/liaoTian-input/liaoTian-input"
+  }
+}

@@ -1,0 +1,1 @@
+<view class="my-about"><view class="my-about-log u_dis_c"><image src="../../static/demo/my-about.jpg" mode="widthFix" lazy-load></image><view>zhang 1.0.0</view></view><block wx:for="{{list}}" wx:for-item="v" wx:for-index="i" wx:key="i"><block><my-list vue-id="{{'1-'+i}}" v="{{v}}" index="{{i}}" bind:__l="__l"></my-list></block></block></view>

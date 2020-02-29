@@ -1,0 +1,1 @@
+<view class="my-nav-one"><view>{{nav.num}}</view><view class="my-nav-te">{{nav.name}}</view></view>

@@ -1,0 +1,19 @@
+
+.my-sheZhi-password>input.data-v-084a4ffe{
+	width: 80%;
+	padding: 20rpx 20rpx;
+	margin: 0 auto;
+	border-bottom: 1rpx solid #EEEEEE;
+}
+.btn.data-v-084a4ffe{
+	width: 80%;
+	border: none;
+	margin-top: 40rpx;
+	background-color: #F0AD4E;
+	color: #000000;
+}
+.disable.data-v-084a4ffe{
+	background-color: #CCCCCC;
+	color: #7A7A7A;
+}
+

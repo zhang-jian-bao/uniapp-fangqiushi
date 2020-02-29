@@ -1,4 +1,9 @@
 {
   "navigationBarTitleText": "我的",
-  "usingComponents": {}
+  "usingComponents": {
+    "my-login": "/components/my-login/my-login",
+    "my-list": "/components/uni-list-com/my-list",
+    "my-nav": "/components/tab/my-nav",
+    "my-icon": "/components/my-login/my-icon"
+  }
 }

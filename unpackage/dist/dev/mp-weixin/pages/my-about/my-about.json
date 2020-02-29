@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "关于访糗百",
+  "usingComponents": {
+    "my-list": "/components/uni-list-com/my-list"
+  }
+}

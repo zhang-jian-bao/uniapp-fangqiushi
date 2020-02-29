@@ -19,7 +19,7 @@
 <script>
 	import time from '../../common/time.js';
 	import liaoTianInput from '../../components/liaoTian-input/liaoTian-input.vue';
-	import liaoTianInputList from '../../components/liaoTian-input/liaoTian-input-list.vue'
+	import liaoTianInputList from '../../components/liaoTian-input/liaoTian-input-list.vue';
 	export default {
 		components:{
 			liaoTianInput,liaoTianInputList
@@ -50,10 +50,12 @@
 				q.exec(res=>{
 					console.log(JSON.stringify(res));
 					res[1].forEach(v=>{
+						//内容的高度等会所有的子节点的和
 						this.style.conH+=v.height
 					});
+					//如果滚动的高度大于可视的高度
 					if(this.style.conH>this.style.itemH){
-						this.scrollTop=this.style.conH;
+						this.scrollTop=this.style.conH;//滚动的高度等于所有的子节点的高度的和
 					}
 				})
 			},

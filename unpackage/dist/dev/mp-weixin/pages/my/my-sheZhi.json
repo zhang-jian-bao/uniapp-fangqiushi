@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "设置页",
+  "usingComponents": {
+    "my-list": "/components/uni-list-com/my-list"
+  }
+}
