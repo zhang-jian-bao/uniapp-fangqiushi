@@ -47,7 +47,7 @@
 		},
 		data() {
 			return {
-				isLogin:false,//登录状态的切换
+				isLogin:true,//登录状态的切换
 				userInfo:{//登陆用户信息
 					userPic:'../../static/demo/topicpic/11.jpeg',
 					userName:'焚心~',

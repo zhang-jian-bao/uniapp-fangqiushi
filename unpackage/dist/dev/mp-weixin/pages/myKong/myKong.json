@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "我的空间",
+  "usingComponents": {
+    "my-kong-one": "/components/my-kong-one/my-kong-one",
+    "uni-list-com": "/components/uni-list-com/uni-list-com",
+    "sl": "/components/sl/sl",
+    "my-nav": "/components/tab/my-nav",
+    "swiper-x": "/components/tab/scroll-x",
+    "my-kong-zhu": "/components/my-kong-one/my-kong-zhu",
+    "my-kong-menu": "/components/caoZuoMeun/my-kong-menu"
+  }
+}

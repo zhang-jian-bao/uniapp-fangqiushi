@@ -51,6 +51,9 @@
 		position: fixed;
 		right: 0;
 		top: 20upx;
+		/* #ifndef APP-PLUS */
+		top: 100upx;
+		/* #endif */
 		width: 300upx;
 		height: auto;
 		padding: 0 20upx;

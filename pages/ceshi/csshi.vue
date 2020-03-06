@@ -2,7 +2,7 @@
 	<view class="my-kong">
 		<!-- 我的空间布局  -->
 			<!-- 顶部背景图布局 -->
-			<my-kong :userInfo="userInfo"></my-kong>
+			<!-- <my-kong :userInfo="userInfo"></my-kong> -->
 		<!-- 导航条 -->
 		<view class="my-kong-nav u_dis_s u_dis">
 			<block v-for="(cc,key) in nav_top" :key="key">
@@ -17,11 +17,12 @@
 		<!-- 详细列表渲染 -->
 		<view class="my-kong-list">
 			<block v-for="(items,index) in huaTiList" :key="index">
-						<!-- <template v-if="tabIndex==0"> -->
-							<!-- 主页内容布局 -->
-							<!-- <my-kong-zhu :userInfo="userInfo"></my-kong-zhu> -->
-						<!-- </template> -->
+						
 						<view class="a">
+							<template v-if="tabIndex==0">
+								<!-- 主页内容布局 -->
+								<!-- <my-kong-zhu :userInfo="userInfo"></my-kong-zhu> -->
+							</template>
 							<template v-if="tabIndex==index">
 								<!-- 渲染列表 -->
 								<block v-for="(c,d) in items.list" :key="d">
@@ -40,13 +41,13 @@
 <script>
 	import sl from '../../components/sl/sl.vue';
 	import uniListCom from '../../components/uni-list-com/uni-list-com.vue'
-	import myKongZhu from '../../components/my-kong/my-kong-zhu.vue';
+	// import myKongZhu from '../../components/my-kong/my-kong-zhu.vue';
 	import swiperX from '../../components/tab/scroll-x.vue';
 	import myNav from '../../components/tab/my-nav.vue';
-	import myKong from '../../components/my-kong/my-kong.vue'
+	// import myKong from '../../components/my-kong/my-kong.vue'
 	export default {
 		components:{
-			myKong, myNav,swiperX,myKongZhu,uniListCom,sl
+			 myNav,swiperX,myKongZhu,uniListCom,sl
 		},
 		data() {
 			return {

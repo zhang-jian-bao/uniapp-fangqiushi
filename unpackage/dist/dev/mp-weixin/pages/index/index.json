@@ -1,5 +1,6 @@
 {
   "usingComponents": {
+    "uni-nav-bar": "/components/uni-nav-bar/uni-nav-bar",
     "sl": "/components/sl/sl",
     "index-list": "/components/index/index-list",
     "swiper-x": "/components/tab/scroll-x",

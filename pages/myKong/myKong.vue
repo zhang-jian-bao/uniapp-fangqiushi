@@ -5,7 +5,7 @@
 		<my-kong-menu :show="show" @bigShow="bigShow"
 		@beizhu="beizhu" @lahei="lahei"></my-kong-menu>
 			<!-- 顶部背景图布局 -->
-			<my-kong :userInfo="userInfo"></my-kong>
+			<my-kong-one :userInfo="userInfo"></my-kong-one>
 		<!-- 导航条 -->
 		<view class="my-kong-nav u_dis_s u_dis">
 			<block v-for="(cc,key) in nav_top" :key="key">
@@ -45,13 +45,13 @@
 	import myKongMenu from '../../components/caoZuoMeun/my-kong-menu.vue'
 	import sl from '../../components/sl/sl.vue';
 	import uniListCom from '../../components/uni-list-com/uni-list-com.vue'
-	import myKongZhu from '../../components/my-kong/my-kong-zhu.vue';
+	import myKongZhu from '../../components/my-kong-one/my-kong-zhu.vue';
 	import swiperX from '../../components/tab/scroll-x.vue';
 	import myNav from '../../components/tab/my-nav.vue';
-	import myKong from '../../components/my-kong/my-kong.vue'
+	import myKongOne from '../../components/my-kong-one/my-kong-one.vue'
 	export default {
 		components:{
-			myKong, myNav,swiperX,myKongZhu,uniListCom,sl,myKongMenu
+			myKongOne, myNav,swiperX,myKongZhu,uniListCom,sl,myKongMenu
 		},
 		data() {
 			return {

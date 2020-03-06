@@ -1672,6 +1672,150 @@ function normalizeComponent (
 
 /***/ }),
 
+/***/ 15:
+/*!**************************************!*\
+  !*** D:/uni-app/糗事/common/config.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //配置信息 api请求前缀
+var webUrl = 'https://ceshi2.dishait.cn/api/v1';var _default =
+
+
+
+{
+  webUrl: webUrl };exports.default = _default;
+
+/***/ }),
+
+/***/ 16:
+/*!***********************************!*\
+  !*** D:/uni-app/糗事/common/lib.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var _config = _interopRequireDefault(__webpack_require__(/*! ./config.js */ 15));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //网络监听
+var NetWork = { //网络状态
+  isConnect: false, //声明一个状态为false
+  On: function On() {var _this = this; //获取当前网络状态
+    uni.getNetworkType({ //官网中的方法
+      success: function success(res) {//如果不等于 none，当前状态为true，不提示，否则提示用户，连接网络
+        if (res.networkType !== 'none') {this.isConnect = true;return false;}uni.showToast({ icon: 'none', title: '请先连接网络' });} }); //监听网络状态变化
+    uni.onNetworkStatusChange(function (res) {//当前是否有网络连接，当用户点击使用WiFi时，可监听到
+      _this.isConnect = res.isConnected; //让当前用户是否联网，等于这个状态，连接true，没连接false
+      if (!res.isConnected) {//如果没有连接，就提示用户，请链接网络，在app.vue中，全局检测
+        uni.showToast({ title: '您目前处于断网状态', icon: 'none' });}});} }; //APP更新//在官网搜索热更新问题==>uni-app 整包升级/更新方案==》客户端实现复制就好了
+//==》在app.vue中，全局检测
+var Update = function Update() {};var _default = { NetWork: NetWork, Update: Update };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+
+/***/ 17:
+/*!************************************!*\
+  !*** D:/uni-app/糗事/common/user.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { //如果用户没有登录，有些权限是不允许用户使用的
+  //用户token
+  token: true,
+  //用户信息
+  userinfo: false,
+  //权限验证跳转Nocheck=true,
+  navigate: function navigate(options) {var type = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "navigateTo";
+    //权限验证
+    if (!this.token) {
+      return uni.navigateTo({ url: '/pages/login/login' });
+    }
+    // if(!Nocheck){
+    // 	if(!this.token) return;
+    // }
+    //跳转
+    switch (type) {
+      case 'navigateTo':
+        uni.navigateTo(options);
+        break;
+      case 'redirectTo':
+        uni.redirectTo(options);
+        break;
+      case 'reLaunch':
+        uni.reLaunch(options);
+        break;
+      case 'switchTab':
+        uni.switchTab(options);
+        break;
+
+      default:
+        break;}
+
+
+  } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+
 /***/ 2:
 /*!******************************************************************************************!*\
   !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js ***!
@@ -7703,19 +7847,19 @@ internalMixin(Vue);
 
 /***/ }),
 
-/***/ 271:
+/***/ 276:
 /*!**********************************************************!*\
   !*** ./node_modules/@babel/runtime/regenerator/index.js ***!
   \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! regenerator-runtime */ 272);
+module.exports = __webpack_require__(/*! regenerator-runtime */ 277);
 
 
 /***/ }),
 
-/***/ 272:
+/***/ 277:
 /*!************************************************************!*\
   !*** ./node_modules/regenerator-runtime/runtime-module.js ***!
   \************************************************************/
@@ -7746,7 +7890,7 @@ var oldRuntime = hadRuntime && g.regeneratorRuntime;
 // Force reevalutation of runtime.js.
 g.regeneratorRuntime = undefined;
 
-module.exports = __webpack_require__(/*! ./runtime */ 273);
+module.exports = __webpack_require__(/*! ./runtime */ 278);
 
 if (hadRuntime) {
   // Restore the original runtime.
@@ -7763,7 +7907,7 @@ if (hadRuntime) {
 
 /***/ }),
 
-/***/ 273:
+/***/ 278:
 /*!*****************************************************!*\
   !*** ./node_modules/regenerator-runtime/runtime.js ***!
   \*****************************************************/
@@ -8526,7 +8670,7 @@ module.exports = g;
 
 /***/ }),
 
-/***/ 358:
+/***/ 377:
 /*!***************************************************!*\
   !*** D:/uni-app/糗事/components/uni-icons/icons.js ***!
   \***************************************************/
@@ -9586,7 +9730,7 @@ module.exports = {"_from":"@dcloudio/uni-stat@alpha","_id":"@dcloudio/uni-stat@2
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/ceshi/csshi": { "navigationBarTitleText": "测试页" }, "pages/index/index": {}, "pages/fen/fen": {}, "pages/xiaoZhiTiao/xiaoZhiTiao": { "enablePullDownRefresh": true, "navigationBarTitleText": "小纸条" }, "pages/my/my": { "navigationBarTitleText": "我的" }, "pages/search/search": { "enablePullDownRefresh": true }, "pages/add-input/add-input": {}, "pages/huaTi-fen/huaTi-fen": { "navigationBarTitleText": "话题分类" }, "pages/login/login": { "navigationBarTitleText": "登录页" }, "pages/fen_xiangQin/fen_xiangQin": { "enablePullDownRefresh": true, "navigationBarTitleText": "我是分类详情页" }, "pages/myFriend/myFriend": {}, "pages/liaoTian/liaoTian": { "navigationBarTitleText": "聊天页" }, "pages/con-list/con-list": { "navigationBarTitleText": "内容页" }, "pages/my/my-sheZhi": { "navigationBarTitleText": "设置页" }, "pages/my/my-sheZhi-password": { "navigationBarTitleText": "修改密码" }, "pages/my/my-email": { "navigationBarTitleText": "绑定邮箱" }, "pages/my-edit/my-edit": { "navigationBarTitleText": "修改资料" }, "pages/my-feedback/my-feedback": { "navigationBarTitleText": "意见反馈" }, "pages/my-about/my-about": { "navigationBarTitleText": "关于访糗百" } }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "仿糗事百科", "navigationBarBackgroundColor": "#ffffff" } };exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": {}, "pages/fen/fen": {}, "pages/xiaoZhiTiao/xiaoZhiTiao": { "enablePullDownRefresh": true, "navigationBarTitleText": "小纸条" }, "pages/my/my": { "navigationBarTitleText": "我的" }, "pages/search/search": { "enablePullDownRefresh": true }, "pages/add-input/add-input": {}, "pages/huaTi-fen/huaTi-fen": { "navigationBarTitleText": "话题分类" }, "pages/login/login": { "navigationBarTitleText": "登录页" }, "pages/fen_xiangQin/fen_xiangQin": { "enablePullDownRefresh": true, "navigationBarTitleText": "我是分类详情页" }, "pages/myFriend/myFriend": {}, "pages/liaoTian/liaoTian": { "navigationBarTitleText": "聊天页" }, "pages/con-list/con-list": { "navigationBarTitleText": "内容页" }, "pages/my/my-sheZhi": { "navigationBarTitleText": "设置页" }, "pages/my/my-sheZhi-password": { "navigationBarTitleText": "修改密码" }, "pages/my/my-email": { "navigationBarTitleText": "绑定邮箱" }, "pages/my-edit/my-edit": { "navigationBarTitleText": "修改资料" }, "pages/my-feedback/my-feedback": { "navigationBarTitleText": "意见反馈" }, "pages/my-about/my-about": { "navigationBarTitleText": "关于访糗百" }, "pages/myKong/myKong": { "navigationBarTitleText": "我的空间" } }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "仿糗事百科", "navigationBarBackgroundColor": "#ffffff" } };exports.default = _default;
 
 /***/ }),
 
@@ -9602,7 +9746,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 
-/***/ 97:
+/***/ 94:
 /*!************************************!*\
   !*** D:/uni-app/糗事/common/time.js ***!
   \************************************/
@@ -9612,6 +9756,32 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //封装时间格式的js文件
 var gettime = {
+  //计算当前的日期星座
+  getHroscope: function getHroscope(data) {
+    var c = ['魔蝎', '水瓶', '双鱼', '金牛', '双子', '巨蟹', '狮子', '处女', '天秤',
+    '天蝎', '射手', '白羊'];
+    var date = new Date(data);
+    var month = date.getMonth() + 1;
+    var day = date.getDate();
+    var statrMonth = month - (day - 14 < '865778999988'.charAt(month));
+    return c[statrMonth] + '座';
+  },
+  //计算年龄指定时间与当前的时间差
+  sumAge: function sumAge(data) {
+    var dateBegin = new Date(data.replace(/-/g, '/'));
+    var dateEnd = new Date(); //获取当前的时间
+    var dateDiff = dateEnd.getTime() - dateBegin.getTime(); //时间差的毫秒数
+    var dayDiff = Math.floor(dateDiff / (24 * 3600 * 1000)); //计算出相差的天数3600=24*60*60
+    var leave1 = dateDiff % (24 * 3600 * 1000); //计算天数后的剩余毫秒数
+    var hours = Math.floor(leave1 / (3600 * 1000)); //计算出小时数
+    var leave2 = leave1 % (3600 * 1000); //计算出小时后的毫秒数
+    var minutes = Math.floor(leave2 / (60 * 1000)); //计算相差的分钟数
+    var leave3 = leave2 % (60 * 1000); //计算相差的分钟数后的毫秒数
+    var seconds = Math.round(leave3 / 1000); //计算秒
+    return dayDiff + '天' + hours + '小时' + minutes + '分钟' + seconds + '秒';
+  },
+
+
   //获取聊天的时间(相差300s内的信息不会显示时间)
   getChatTime: function getChatTime(v1, v2) {
     //PHP写的时间戳是10位,服务器的是13位

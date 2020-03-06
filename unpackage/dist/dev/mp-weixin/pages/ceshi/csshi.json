@@ -1,6 +1,0 @@
-{
-  "navigationBarTitleText": "测试页",
-  "usingComponents": {
-    "my-icon": "/components/my-login/my-icon"
-  }
-}

@@ -12,9 +12,9 @@ Vue.config.productionTip = false;
 // 	}
 // 	return [userId,userMa,userLog,userName];
 // }
-import config from './common/config.js';//前面要加个./
+import configg from './common/config.js';//前面要加个./
 import lib from './common/lib.js';//全局配置接口
-Vue.prototype.config=config;
+Vue.prototype.configg=configg;
 Vue.prototype.lib=lib;
 
 import User from './common/user.js';//封装接口
@@ -23,7 +23,7 @@ App.mpType = 'app'
 
 const app = new Vue({
     ...App,
-	config,
+	configg,
 	lib
 })
 app.$mount()

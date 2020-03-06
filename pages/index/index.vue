@@ -1,6 +1,29 @@
 <template>
 	<!-- 首页页面 -->
 	<view class="index">
+		<!-- 如果不是APP端就显示自定义导航栏，在微信小程序中显示 自定义导航栏-->
+		<!-- #ifndef APP-PLUS -->
+		<uni-nav-bar :shadow="false" :border="false" style="z-index: 9999;"
+		@clickLeft="clickLeft" @clickRight="clickRight">
+			<block slot="left">
+				<view class="iconfont icon-qiandao" style="font-size: 22px;
+				color: #ff9619;margin-left: 20upx;"></view>
+			</block>
+			<view style="display: flex;justify-content: center;align-items: center;
+			border-radius: 10px;margin-left: -46upx;height: 60upx;margin-top: 12upx;
+			color: #CCCCCC;background-color: #F7F7F7;flex: 1;" @click="openSearch">
+				<view class="iconfont icon-sousuo" style="margin-right: 6upx;"></view>
+				搜索糗事
+			</view>
+			
+			<block slot="right">
+				<view class="iconfont icon-bianji1" style="font-size: 22px;
+				color: #000000;"></view>
+			</block>
+		</uni-nav-bar>
+		<!-- #endif -->
+		
+		
 		<!-- 顶部导航 -->
 		<swiper-x @nav='nav' :tabBars='tabBars' :tabIndex='tabIndex'></swiper-x>
 		<!-- 列表 渲染循环block-->
@@ -38,13 +61,19 @@
 </template>
 
 <script>
+	// #ifndef  APP-PLUS
+	import uniNavBar from '../../components/uni-nav-bar/uni-nav-bar.vue';
+	// #endif
 	import indexList from '../../components/index/index-list.vue';
 	import swiperX from '../../components/tab/scroll-x.vue';
 	import sl from '../../components/sl/sl.vue';
 	import Tu from '../../components/tu/tu.vue';
 	export default {
 		components:{
-			indexList,swiperX,sl,Tu
+			indexList,swiperX,sl,Tu,
+			// #ifndef  APP-PLUS
+			uniNavBar
+			// #endif
 		},
 		data() {
 			return {
@@ -230,7 +259,6 @@
 			        this.swiperheight = height;
 			    },
 			});
-			this.getNav();
 		},
 		//点击搜索框，跳转搜索页面
 		onNavigationBarSearchInputClicked() {
@@ -254,15 +282,21 @@
 			}
 		},
 		methods: {
-			//获取文章分类
-			getNav(){
-				uni.request({
-					url: this.config.webUrl+'/postclass',
-					method: 'GET',
-					success: res => {},
-					fail: () => {},
-				});
-			},
+			// #ifndef  APP-PLUS
+				clickLeft(){//左边的点击事件
+					console.log('签到按钮')
+				},
+				clickRight(){//点击编辑按钮
+					uni.navigateTo({
+						url: '/pages/add-input/add-input'
+					});
+				},
+				openSearch(){//点击搜索框
+					uni.navigateTo({
+						url: '/pages/search/search'
+					});
+				},
+			// #endif
 			sl(index){//上拉加载时
 			console.log(this.newslist[index].loadtext)
 				if(this.newslist[index].loadtext!="上拉加载更多"){

@@ -1,0 +1,51 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 主页信息布局 */
+.my-kong-zhu-item.data-v-8a9833e8{
+	padding: 40rpx;
+	font-size: 34rpx;
+	color: #CCCCCC;
+	border-bottom: 1rpx solid #CCCCCC;
+}
+.my-kong-zhu-item>view.data-v-8a9833e8:first-child{
+	font-size: 40rpx;
+	font-weight: bold;
+	color: #000000;
+}
+
+
+

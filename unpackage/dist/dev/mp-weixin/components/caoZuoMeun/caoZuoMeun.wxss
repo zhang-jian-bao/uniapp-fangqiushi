@@ -12,6 +12,9 @@
 	position: fixed;
 	right: 0;
 	top: 20rpx;
+	
+	top: 100rpx;
+	
 	width: 300rpx;
 	height: auto;
 	padding: 0 20rpx;

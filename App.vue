@@ -1,6 +1,8 @@
 <script>
 	export default {
 		onLaunch: function() {
+			//网络监听（用户目前断网，切换WiFi）
+			this.lib.NetWork.On();
 			console.log('App Launch')
 		},
 		onShow: function() {
