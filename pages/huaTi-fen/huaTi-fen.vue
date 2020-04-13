@@ -16,7 +16,7 @@
 		                           	<block v-for="(item,key) in items.list"
 		                           	 :key="key">
 		                           		<com-list :item="item" 
-										:index="key" @xQ=xQ></com-list>
+										:index="key"></com-list>
 		                           	</block>
 		                           	<!-- 上拉加载刷新 -->
 		                           	<sl :loadtext="items.loadtext"></sl>
@@ -87,158 +87,159 @@
 				    id: 'bendi'
 				},
 				],
-				newslist:[
-					{
-						loadtext:'上拉加载更多',
-						list:[
-							{
-								img:'../../static/demo/topicpic/11.jpeg',
-								title:'淘宝记录簿',
-								con:'120斤到150斤，我的反转人生',
-								doscnum:577,
-								todynum:720
-							},
-							{
-								img:'../../static/demo/topicpic/12.jpeg',
-								title:'白天拍照啦',
-								con:'120斤到150斤，我的反转人生',
-								doscnum:577,
-								todynum:720
-							},
-							{
-								img:'../../static/demo/topicpic/13.jpeg',
-								title:'亲身经历的灵异事件',
-								con:'120斤到150斤，我的反转人生',
-								doscnum:577,
-								todynum:720
-							},
-							{
-								img:'../../static/demo/topicpic/14.jpeg',
-								title:'你是我的小可爱',
-								con:'120斤到150斤，我的反转人生',
-								doscnum:577,
-								todynum:720
-							},
-							{
-								img:'../../static/demo/topicpic/15.jpeg',
-								title:'你是我的小坏蛋',
-								con:'120斤到150斤，我的反转人生',
-								doscnum:577,
-								todynum:720
-							}
-						]
-					},
-					{
-						loadtext:'上拉加载更多',
-						list:[
-							{
-								img:'../../static/demo/topicpic/11.jpeg',
-								title:'淘宝记录簿',
-								con:'120斤到150斤，我的反转人生',
-								doscnum:577,
-								todynum:720
-							},
-							{
-								img:'../../static/demo/topicpic/12.jpeg',
-								title:'白天拍照啦',
-								con:'120斤到150斤，我的反转人生',
-								doscnum:577,
-								todynum:720
-							},
-							{
-								img:'../../static/demo/topicpic/13.jpeg',
-								title:'亲身经历的灵异事件',
-								con:'120斤到150斤，我的反转人生',
-								doscnum:577,
-								todynum:720
-							},
-							{
-								img:'../../static/demo/topicpic/14.jpeg',
-								title:'你是我的小可爱',
-								con:'120斤到150斤，我的反转人生',
-								doscnum:577,
-								todynum:720
-							},
-							{
-								img:'../../static/demo/topicpic/15.jpeg',
-								title:'你是我的小坏蛋',
-								con:'120斤到150斤，我的反转人生',
-								doscnum:577,
-								todynum:720
-							}
-						]
-					},
-					{
-						loadtext:'上拉加载更多',
-						list:[
-							{
-								img:'../../static/demo/topicpic/11.jpeg',
-								title:'淘宝记录簿',
-								con:'120斤到150斤，我的反转人生',
-								doscnum:577,
-								todynum:720
-							},
-							{
-								img:'../../static/demo/topicpic/12.jpeg',
-								title:'白天拍照啦',
-								con:'120斤到150斤，我的反转人生',
-								doscnum:577,
-								todynum:720
-							},
-							{
-								img:'../../static/demo/topicpic/13.jpeg',
-								title:'亲身经历的灵异事件',
-								con:'120斤到150斤，我的反转人生',
-								doscnum:577,
-								todynum:720
-							},
-							{
-								img:'../../static/demo/topicpic/14.jpeg',
-								title:'你是我的小可爱',
-								con:'120斤到150斤，我的反转人生',
-								doscnum:577,
-								todynum:720
-							},
-							{
-								img:'../../static/demo/topicpic/15.jpeg',
-								title:'你是我的小坏蛋',
-								con:'120斤到150斤，我的反转人生',
-								doscnum:577,
-								todynum:720
-							},
-							{
-								img:'../../static/demo/topicpic/14.jpeg',
-								title:'你是我的臭妹妹',
-								con:'120斤到150斤，我的反转人生',
-								doscnum:577,
-								todynum:720
-							},
-							{
-								img:'../../static/demo/topicpic/15.jpeg',
-								title:'你是我的小裕平',
-								con:'120斤到150斤，我的反转人生',
-								doscnum:577,
-								todynum:720
-							}
-						]
-					},
-					{
-						loadtext:'上拉加载更多',
-						list:[]
-					},
-					{
-						loadtext:'上拉加载更多',
-						list:[]
-					},
-					{
-						loadtext:'上拉加载更多',
-						list:[]
-					},
-					{
-						loadtext:'上拉加载更多',
-						list:[]
-					}
-				],
+				newslist:[],
+				// newslist:[
+				// 	{
+				// 		loadtext:'上拉加载更多',
+				// 		list:[
+				// 			{
+				// 				img:'../../static/demo/topicpic/11.jpeg',
+				// 				title:'淘宝记录簿',
+				// 				con:'120斤到150斤，我的反转人生',
+				// 				doscnum:577,
+				// 				todynum:720
+				// 			},
+				// 			{
+				// 				img:'../../static/demo/topicpic/12.jpeg',
+				// 				title:'白天拍照啦',
+				// 				con:'120斤到150斤，我的反转人生',
+				// 				doscnum:577,
+				// 				todynum:720
+				// 			},
+				// 			{
+				// 				img:'../../static/demo/topicpic/13.jpeg',
+				// 				title:'亲身经历的灵异事件',
+				// 				con:'120斤到150斤，我的反转人生',
+				// 				doscnum:577,
+				// 				todynum:720
+				// 			},
+				// 			{
+				// 				img:'../../static/demo/topicpic/14.jpeg',
+				// 				title:'你是我的小可爱',
+				// 				con:'120斤到150斤，我的反转人生',
+				// 				doscnum:577,
+				// 				todynum:720
+				// 			},
+				// 			{
+				// 				img:'../../static/demo/topicpic/15.jpeg',
+				// 				title:'你是我的小坏蛋',
+				// 				con:'120斤到150斤，我的反转人生',
+				// 				doscnum:577,
+				// 				todynum:720
+				// 			}
+				// 		]
+				// 	},
+				// 	{
+				// 		loadtext:'上拉加载更多',
+				// 		list:[
+				// 			{
+				// 				img:'../../static/demo/topicpic/11.jpeg',
+				// 				title:'淘宝记录簿',
+				// 				con:'120斤到150斤，我的反转人生',
+				// 				doscnum:577,
+				// 				todynum:720
+				// 			},
+				// 			{
+				// 				img:'../../static/demo/topicpic/12.jpeg',
+				// 				title:'白天拍照啦',
+				// 				con:'120斤到150斤，我的反转人生',
+				// 				doscnum:577,
+				// 				todynum:720
+				// 			},
+				// 			{
+				// 				img:'../../static/demo/topicpic/13.jpeg',
+				// 				title:'亲身经历的灵异事件',
+				// 				con:'120斤到150斤，我的反转人生',
+				// 				doscnum:577,
+				// 				todynum:720
+				// 			},
+				// 			{
+				// 				img:'../../static/demo/topicpic/14.jpeg',
+				// 				title:'你是我的小可爱',
+				// 				con:'120斤到150斤，我的反转人生',
+				// 				doscnum:577,
+				// 				todynum:720
+				// 			},
+				// 			{
+				// 				img:'../../static/demo/topicpic/15.jpeg',
+				// 				title:'你是我的小坏蛋',
+				// 				con:'120斤到150斤，我的反转人生',
+				// 				doscnum:577,
+				// 				todynum:720
+				// 			}
+				// 		]
+				// 	},
+				// 	{
+				// 		loadtext:'上拉加载更多',
+				// 		list:[
+				// 			{
+				// 				img:'../../static/demo/topicpic/11.jpeg',
+				// 				title:'淘宝记录簿',
+				// 				con:'120斤到150斤，我的反转人生',
+				// 				doscnum:577,
+				// 				todynum:720
+				// 			},
+				// 			{
+				// 				img:'../../static/demo/topicpic/12.jpeg',
+				// 				title:'白天拍照啦',
+				// 				con:'120斤到150斤，我的反转人生',
+				// 				doscnum:577,
+				// 				todynum:720
+				// 			},
+				// 			{
+				// 				img:'../../static/demo/topicpic/13.jpeg',
+				// 				title:'亲身经历的灵异事件',
+				// 				con:'120斤到150斤，我的反转人生',
+				// 				doscnum:577,
+				// 				todynum:720
+				// 			},
+				// 			{
+				// 				img:'../../static/demo/topicpic/14.jpeg',
+				// 				title:'你是我的小可爱',
+				// 				con:'120斤到150斤，我的反转人生',
+				// 				doscnum:577,
+				// 				todynum:720
+				// 			},
+				// 			{
+				// 				img:'../../static/demo/topicpic/15.jpeg',
+				// 				title:'你是我的小坏蛋',
+				// 				con:'120斤到150斤，我的反转人生',
+				// 				doscnum:577,
+				// 				todynum:720
+				// 			},
+				// 			{
+				// 				img:'../../static/demo/topicpic/14.jpeg',
+				// 				title:'你是我的臭妹妹',
+				// 				con:'120斤到150斤，我的反转人生',
+				// 				doscnum:577,
+				// 				todynum:720
+				// 			},
+				// 			{
+				// 				img:'../../static/demo/topicpic/15.jpeg',
+				// 				title:'你是我的小裕平',
+				// 				con:'120斤到150斤，我的反转人生',
+				// 				doscnum:577,
+				// 				todynum:720
+				// 			}
+				// 		]
+				// 	},
+				// 	{
+				// 		loadtext:'上拉加载更多',
+				// 		list:[]
+				// 	},
+				// 	{
+				// 		loadtext:'上拉加载更多',
+				// 		list:[]
+				// 	},
+				// 	{
+				// 		loadtext:'上拉加载更多',
+				// 		list:[]
+				// 	},
+				// 	{
+				// 		loadtext:'上拉加载更多',
+				// 		list:[]
+				// 	}
+				// ],
 				swiperheight:500
 				
 			}
@@ -251,6 +252,16 @@
 			        let height = res.windowHeight-uni.upx2px(100)
 			        this.swiperheight = height;
 			    },
+			});
+			//云函数渲染列表
+			uniCloud.callFunction({
+				name:'fen_hua',
+				success: (res) => {
+					console.log(res);
+					this.newslist=res.result.data[0].newslist;
+				},fail: () => {
+					console.log('话题页的列表失败');
+				}
 			})
 		},
 		//点击搜索框，跳转搜索页面
@@ -275,11 +286,11 @@
 			}
 		},
 		methods: {
-			xQ(){//点击跳转到详情页
-				uni.navigateTo({
-					url:'/pages/fen_xiangQin/fen_xiangQin'
-				})
-			},
+		// 	qqx(k){//点击跳转到详情页
+		// 		console.log(k);
+				
+		
+		// 	},
 			sl(index){//上拉加载时
 			console.log(this.newslist[index].loadtext)
 				if(this.newslist[index].loadtext!="上拉加载更多"){

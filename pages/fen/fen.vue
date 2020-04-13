@@ -13,12 +13,12 @@
 		                   <scroll-view scroll-y class="list animated fadeInLeft"
 						   @scrolltolower="sl()">
 		                           <!-- 列表内容 -->
-		                           <block v-for="(item,key) in guanZhu.list" :key="key">
+		                           <block v-for="(item,key) in aa.list" :key="key">
 		                           	<uni-list-com :item="item" 
 									:index="key"></uni-list-com>
 		                           </block>
 								   <!-- 上拉加载刷新 -->
-								   <sl :loadtext="guanZhu.loadtext"></sl>
+								   <sl :loadtext="aa.loadtext"></sl>
 		                    </scroll-view>
 						
 		                </swiper-item>
@@ -42,7 +42,7 @@
 									:key="index">
 										<swiper-item class="huaTi-banner">
 											<image :src="item.url" 
-											mode="widthFix" lazy-load></image>
+											mode="scaleToFill" lazy-load></image>
 										</swiper-item>
 										</block>
 									
@@ -88,108 +88,110 @@
 					{name: '主题',id:'guanZhu'},
 					{name: '话题',id:'huaTi'}
 				],
-				huaTi:{
-					swiper:[
-						{url:'../../static/demo/banner1.jpg'},
-						{url:'../../static/demo/banner2.jpg'},
-						{url:'../../static/demo/banner1.jpg'}
-					],
-					hot:['最新','游戏','情感','打卡','故事','喜爱'],
-					list:[
-						{
-							img:'../../static/demo/topicpic/11.jpeg',
-							title:'淘宝记录簿',
-							con:'120斤到150斤，我的反转人生',
-							doscnum:577,
-							todynum:720
-						},
-						{
-							img:'../../static/demo/topicpic/12.jpeg',
-							title:'白天拍照啦',
-							con:'120斤到150斤，我的反转人生',
-							doscnum:577,
-							todynum:720
-						},
-						{
-							img:'../../static/demo/topicpic/13.jpeg',
-							title:'亲身经历的灵异事件',
-							con:'120斤到150斤，我的反转人生',
-							doscnum:577,
-							todynum:720
-						}
-					]
-				},
-				guanZhu:{
-					loadtext:'上拉加载更多',
-					list:[
-						{
-							userImg:'../../static/demo/userpic/8.jpg',
-							userName:'焚心',
-							sex:0,//0代表男，1代表女
-							age:25,
-							isGuanZhu:false,
-							title:'我是标题，，，',
-							titlePic:'',
-							video:false,
-							share:false,
-							path:'深圳 龙岗',
-							sharenum:30,
-							commentnum:37,
-							goodnum:134//img是图片video视屏
-						},
-						{
-							userImg:'../../static/demo/userpic/6.jpg',
-							userName:'焚心',
-							sex:0,//0代表男，1代表女
-							age:25,
-							isGuanZhu:false,
-							title:'我是标题，，，',
-							titlePic:'../../static/demo/datapic/13.jpg',
-							video:false,
-							share:false,
-							path:'深圳 龙岗',
-							sharenum:30,
-							commentnum:37,
-							goodnum:134//img是图片video视屏
-						},
-						{
-							userImg:'../../static/demo/userpic/5.jpg',
-							userName:'焚心',
-							sex:1,//0代表男，1代表女
-							age:25,
-							isGuanZhu:false,
-							title:'我是标题，，，',
-							titlePic:'../../static/demo/datapic/13.jpg',
-							video:{
-								looknum:'20w',
-								long:'4.28'
-							},
-							share:false,
-							path:'深圳 龙岗',
-							sharenum:30,
-							commentnum:37,
-							goodnum:134//img是图片video视屏
-						},
-						{
-							userImg:'../../static/demo/userpic/9.jpg',
-							userName:'焚心',
-							sex:1,//0代表男，1代表女
-							age:24,
-							isGuanZhu:false,
-							title:'我是标题，，，',
-							titlePic:'',
-							video:false,
-							share:{
-								title:'我是分享标题',
-								shareImg:'../../static/demo/datapic/14.jpg'
-							},
-							path:'深圳 龙岗',
-							sharenum:30,
-							commentnum:37,
-							goodnum:134//img是图片video视屏
-						}
-					]
-				}
+				// huaTi:{
+				// 	swiper:[
+				// 		{url:'../../static/demo/banner1.jpg'},
+				// 		{url:'../../static/demo/banner2.jpg'},
+				// 		{url:'../../static/demo/banner1.jpg'}
+				// 	],
+				// 	hot:['最新','游戏','情感','打卡','故事','喜爱'],
+				// 	list:[
+				// 		{
+				// 			img:'../../static/demo/topicpic/11.jpeg',
+				// 			title:'淘宝记录簿',
+				// 			con:'120斤到150斤，我的反转人生',
+				// 			doscnum:577,
+				// 			todynum:720
+				// 		},
+				// 		{
+				// 			img:'../../static/demo/topicpic/12.jpeg',
+				// 			title:'白天拍照啦',
+				// 			con:'120斤到150斤，我的反转人生',
+				// 			doscnum:577,
+				// 			todynum:720
+				// 		},
+				// 		{
+				// 			img:'../../static/demo/topicpic/13.jpeg',
+				// 			title:'亲身经历的灵异事件',
+				// 			con:'120斤到150斤，我的反转人生',
+				// 			doscnum:577,
+				// 			todynum:720
+				// 		}
+				// 	]
+				// },
+				huaTi:'',
+				aa:''
+				// guanZhu:{
+				// 	loadtext:'上拉加载更多',
+				// 	list:[
+				// 		{
+				// 			userImg:'../../static/demo/userpic/8.jpg',
+				// 			userName:'焚心',
+				// 			sex:0,//0代表男，1代表女
+				// 			age:25,
+				// 			isGuanZhu:false,
+				// 			title:'我是标题，，，',
+				// 			titlePic:'',
+				// 			video:false,
+				// 			share:false,
+				// 			path:'深圳 龙岗',
+				// 			sharenum:30,
+				// 			commentnum:37,
+				// 			goodnum:134//img是图片video视屏
+				// 		},
+				// 		{
+				// 			userImg:'../../static/demo/userpic/6.jpg',
+				// 			userName:'焚心',
+				// 			sex:0,//0代表男，1代表女
+				// 			age:25,
+				// 			isGuanZhu:false,
+				// 			title:'我是标题，，，',
+				// 			titlePic:'../../static/demo/datapic/13.jpg',
+				// 			video:false,
+				// 			share:false,
+				// 			path:'深圳 龙岗',
+				// 			sharenum:30,
+				// 			commentnum:37,
+				// 			goodnum:134//img是图片video视屏
+				// 		},
+				// 		{
+				// 			userImg:'../../static/demo/userpic/5.jpg',
+				// 			userName:'焚心',
+				// 			sex:1,//0代表男，1代表女
+				// 			age:25,
+				// 			isGuanZhu:false,
+				// 			title:'我是标题，，，',
+				// 			titlePic:'../../static/demo/datapic/13.jpg',
+				// 			video:{
+				// 				looknum:'20w',
+				// 				long:'4.28'
+				// 			},
+				// 			share:false,
+				// 			path:'深圳 龙岗',
+				// 			sharenum:30,
+				// 			commentnum:37,
+				// 			goodnum:134//img是图片video视屏
+				// 		},
+				// 		{
+				// 			userImg:'../../static/demo/userpic/9.jpg',
+				// 			userName:'焚心',
+				// 			sex:1,//0代表男，1代表女
+				// 			age:24,
+				// 			isGuanZhu:false,
+				// 			title:'我是标题，，，',
+				// 			titlePic:'',
+				// 			video:false,
+				// 			share:{
+				// 				title:'我是分享标题',
+				// 				shareImg:'../../static/demo/datapic/14.jpg'
+				// 			},
+				// 			path:'深圳 龙岗',
+				// 			sharenum:30,
+				// 			commentnum:37,
+				// 			goodnum:134//img是图片video视屏
+				// 		}
+				// 	]
+				// }
 				
 			}
 		},
@@ -208,7 +210,31 @@
 			        let height = res.windowHeight-uni.upx2px(100)
 			        this.swiperheight = height;
 			    },
+			});
+			//获取分类数据列表，云函数
+			uniCloud.callFunction({
+				name:'fen',
+				success: (res) => {
+					
+					this.aa=res.result.data[0];
+					// console.log(this.aa);
+				},fail: (msg) => {
+					console.log('分类页面数据列表读取失败');
+				},complete: () => {
+					console.log('分类页面数据列表成功、失败都可以运行');
+				}
 			})
+			//获取话题列表
+			uniCloud.callFunction({
+				name:'fen_hua',
+				success: (res) => {
+					console.log(res.result.data[0].huaTi);
+					this.huaTi=res.result.data[0].huaTi;
+				},fail: () => {
+					console.log("话题列表失败");
+				}
+			})
+			
 		},
 		methods:{
 			xQ(){
@@ -217,34 +243,47 @@
 				})
 			},
 			sl(index){//上拉加载时
-			console.log(this.guanZhu.loadtext)
-				if(this.guanZhu.loadtext!="上拉加载更多"){
+			console.log(this.aa.loadtext)
+				if(this.aa.loadtext!="上拉加载更多"){
 					return false;//等于上拉加载触发方法，不等于就阻止触发
 				}
-				this.guanZhu.loadtext="加载中。。。";
+				this.aa.loadtext="加载中。。。";
+				uniCloud.callFunction({
+					name:'fen_sl',
+					success: (res) => {
+						// console.log(res.result.data[0].list);
+							res.result.data[0].list.forEach(v=>{
+								this.aa.list.push(v);
+							})
+							this.aa.loadtext="我是有底线的~";
+						
+					},fail: () => {
+						console.log('上华加载失败');
+					}
+				})
 				// if(this.guanZhu.list.length>8){//有点问题
 					
 				// 	return false;
 				// }
-				setTimeout(()=>{
-					let obj={
-							userImg:'../../static/demo/userpic/6.jpg',
-							userName:'焚心',
-							sex:0,//0代表男，1代表女
-							age:25,
-							isGuanZhu:false,
-							title:'我是标题，，，',
-							titlePic:'../../static/demo/datapic/13.jpg',
-							video:false,
-							share:false,
-							path:'深圳 龙岗',
-							sharenum:30,
-							commentnum:37,
-							goodnum:134//img是图片video视屏
-						};
-					this.guanZhu.list.push(obj);
-					this.guanZhu.loadtext="我是有底线的~";
-				},500)
+				// setTimeout(()=>{
+					// let obj={
+					// 		userImg:'../../static/demo/userpic/6.jpg',
+					// 		userName:'焚心',
+					// 		sex:0,//0代表男，1代表女
+					// 		age:25,
+					// 		isGuanZhu:false,
+					// 		title:'我是标题，，，',
+					// 		titlePic:'../../static/demo/datapic/13.jpg',
+					// 		video:false,
+					// 		share:false,
+					// 		path:'深圳 龙岗',
+					// 		sharenum:30,
+					// 		commentnum:37,
+					// 		goodnum:134//img是图片video视屏
+					// 	};
+				// 	this.guanZhu.list.push(obj);
+				// 	this.guanZhu.loadtext="我是有底线的~";
+				// },500)
 				
 			},
 			zhuTi(k){//点击头部导航切换

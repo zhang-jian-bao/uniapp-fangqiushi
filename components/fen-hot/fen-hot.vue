@@ -48,7 +48,7 @@
 		border-radius: 10upx;
 	}
 	.huaTi-hot-top-right{
-		color: #EEEEEE;
+		color: #CCCCCC;
 	}
 	.huaTi-hot{
 		margin: 20upx 0;

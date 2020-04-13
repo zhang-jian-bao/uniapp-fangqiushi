@@ -60,6 +60,21 @@
 					title:'关注成功',
 					icon:'success'
 				})
+				//点击关注，将当前的状态，写入到数据库中
+				// uniCloud.callFunction({
+				// 	name:'isGuanZhu',
+				// 	data:{
+				// 		a:this.isGuanZhu
+				// 	},
+				// 	success:(res)=>{
+				// 		console.log('关注成功'+res)
+				// 	},fail: (msg) => {
+				// 		console.log('关注失败')
+				// 	},
+				// 	complete: (a) => {
+				// 		console.log('关注第三方运行')
+				// 	}
+				// })
 			},
 			caoZuo(type){//点击顶和踩的操作
 				switch (type){

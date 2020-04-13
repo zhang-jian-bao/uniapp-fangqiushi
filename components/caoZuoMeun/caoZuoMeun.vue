@@ -21,7 +21,7 @@
 <script>
 	export default {
 		props:{
-			show:Boolean
+			show:Boolean,
 		},
 		methods:{
 			bigShow(){//大的隐藏

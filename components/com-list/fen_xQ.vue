@@ -11,8 +11,8 @@
 						<view >#{{item.title}}#</view>
 					</view>
 					<view class="fen_xiangQin_top_two u_dis">
-						<view class="">动态 {{item.tainum}}</view>
-						<view class="">今日 {{item.todaynum}}</view>
+						<view class="">动态 {{item.doscnum}}</view>
+						<view class="">今日 {{item.todynum}}</view>
 					</view>
 					<view class="fen_xiangQin_top_three">
 						{{item.con}}

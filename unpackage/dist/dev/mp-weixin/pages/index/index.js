@@ -95,9 +95,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
 var components = {
   "uni-nav-bar": () =>
-    __webpack_require__.e(/*! import() | components/uni-nav-bar/uni-nav-bar */ "components/uni-nav-bar/uni-nav-bar").then(__webpack_require__.bind(null, /*! @/components/uni-nav-bar/uni-nav-bar.vue */ 166)),
+    __webpack_require__.e(/*! import() | components/uni-nav-bar/uni-nav-bar */ "components/uni-nav-bar/uni-nav-bar").then(__webpack_require__.bind(null, /*! @/components/uni-nav-bar/uni-nav-bar.vue */ 162)),
   sl: () =>
-    __webpack_require__.e(/*! import() | components/sl/sl */ "components/sl/sl").then(__webpack_require__.bind(null, /*! @/components/sl/sl.vue */ 159))
+    __webpack_require__.e(/*! import() | components/sl/sl */ "components/sl/sl").then(__webpack_require__.bind(null, /*! @/components/sl/sl.vue */ 169))
 }
 var render = function() {
   var _vm = this
@@ -136,7 +136,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var uniNavBar = function uniNavBar() {return __webpack_require__.e(/*! import() | components/uni-nav-bar/uni-nav-bar */ "components/uni-nav-bar/uni-nav-bar").then(__webpack_require__.bind(null, /*! ../../components/uni-nav-bar/uni-nav-bar.vue */ 166));};var indexList = function indexList() {return __webpack_require__.e(/*! import() | components/index/index-list */ "components/index/index-list").then(__webpack_require__.bind(null, /*! ../../components/index/index-list.vue */ 173));};var swiperX = function swiperX() {return __webpack_require__.e(/*! import() | components/tab/scroll-x */ "components/tab/scroll-x").then(__webpack_require__.bind(null, /*! ../../components/tab/scroll-x.vue */ 180));};var sl = function sl() {return __webpack_require__.e(/*! import() | components/sl/sl */ "components/sl/sl").then(__webpack_require__.bind(null, /*! ../../components/sl/sl.vue */ 159));};var Tu = function Tu() {return __webpack_require__.e(/*! import() | components/tu/tu */ "components/tu/tu").then(__webpack_require__.bind(null, /*! ../../components/tu/tu.vue */ 187));};var _default =
+/* WEBPACK VAR INJECTION */(function(uni, uniCloud) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var uniNavBar = function uniNavBar() {return __webpack_require__.e(/*! import() | components/uni-nav-bar/uni-nav-bar */ "components/uni-nav-bar/uni-nav-bar").then(__webpack_require__.bind(null, /*! ../../components/uni-nav-bar/uni-nav-bar.vue */ 162));};var indexList = function indexList() {return __webpack_require__.e(/*! import() | components/index/index-list */ "components/index/index-list").then(__webpack_require__.bind(null, /*! ../../components/index/index-list.vue */ 176));};var swiperX = function swiperX() {return __webpack_require__.e(/*! import() | components/tab/scroll-x */ "components/tab/scroll-x").then(__webpack_require__.bind(null, /*! ../../components/tab/scroll-x.vue */ 183));};var sl = function sl() {return __webpack_require__.e(/*! import() | components/sl/sl */ "components/sl/sl").then(__webpack_require__.bind(null, /*! ../../components/sl/sl.vue */ 169));};var Tu = function Tu() {return __webpack_require__.e(/*! import() | components/tu/tu */ "components/tu/tu").then(__webpack_require__.bind(null, /*! ../../components/tu/tu.vue */ 190));};var _default =
 
 
 
@@ -397,6 +397,17 @@ __webpack_require__.r(__webpack_exports__);
         _this.swiperheight = height;
       } });
 
+    uniCloud.callFunction({
+      name: 'index', //云函数名称
+      success: function success(res) {
+        console.log(res);
+      }, fail: function fail(msg) {
+        console.log(msg);
+      },
+      complete: function complete(m) {
+        console.log('在执行');
+      } });
+
   },
   //点击搜索框，跳转搜索页面
   onNavigationBarSearchInputClicked: function onNavigationBarSearchInputClicked() {
@@ -474,7 +485,7 @@ __webpack_require__.r(__webpack_exports__);
       console.log(e.detail.current); //当前列表的下标
       this.tabIndex = e.detail.current;
     } } };exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"], __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/uni-cloud/dist/index.js */ 24)["default"]))
 
 /***/ })
 

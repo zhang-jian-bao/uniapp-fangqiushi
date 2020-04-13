@@ -1,5 +1,5 @@
 <template>
-	<view class="sl">
+	<view class="sl animated bounce">
 		{{loadtext}}
 	</view>
 </template>

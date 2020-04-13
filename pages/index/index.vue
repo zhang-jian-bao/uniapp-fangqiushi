@@ -31,7 +31,8 @@
 		            <swiper class="swiper-box" 
 					:style="{height:swiperheight+'px'}" 
 					:current="tabIndex" @change="tabChange">
-		                <swiper-item v-for="(items,index) in newslist" :key="index">
+					<!-- list是后台数据，本地数据是newslist -->
+		                <swiper-item v-for="(items,index) in list" :key="index">
 		                    <scroll-view scroll-y class="list animated fadeInLeft "
 							 @scrolltolower="sl(index)">
 		                           <template v-if="items.list.length>0">
@@ -42,7 +43,7 @@
 		                           		</index-list>
 		                           	</block>
 		                           	<!-- 上拉加载刷新 -->
-		                           	<sl :loadtext="items.loadtext"></sl>
+		                           	<sl  :loadtext="items.loadtext"></sl>
 		                           </template>
 								   <template v-else>
 									   <!-- 没有数据时，显示图片提示啥也没有 -->
@@ -77,6 +78,7 @@
 		},
 		data() {
 			return {
+				list:[],
 				tabIndex: 0,
 				tabBars: [
 					{
@@ -259,6 +261,53 @@
 			        this.swiperheight = height;
 			    },
 			});
+			//读取后台列表数据
+			uniCloud.callFunction({
+				name:'index',//云函数名称
+				success: (res) => {
+					// console.log(res);
+					const list=res.result.data[0].newsList;
+					// console.log(list);
+					this.list=list;
+				},fail: (msg) => {
+					console.log(msg);
+				},
+				complete: (m) => {
+					console.log('在执行');
+				}
+			});
+			// uniCloud.callFunction({//通过客户端添加数据到云函数中，不能到数据库中
+			// 	name:'add',//云函数名称
+			// 	data:{
+			// 		a:'王五',
+			// 		b:18
+			// 	},
+			// 	success: (res) => {
+			// 		console.log(res);
+					
+			// 	},fail: (msg) => {
+			// 		console.log(msg);
+			// 	},
+			// 	complete: (m) => {
+			// 		console.log('在执行');
+			// 	}
+			// });
+			// uniCloud.callFunction({//通过客户端添加数据到云函数中，再到到数据库中
+			// 	name:'add_one',//云函数名称
+			// 	data:{
+			// 		a:'小坏蛋111',
+			// 		b:18
+			// 	},
+			// 	success: (res) => {
+			// 		console.log(res);
+					
+			// 	},fail: (msg) => {
+			// 		console.log(msg);
+			// 	},
+			// 	complete: (m) => {
+			// 		console.log('在执行');
+			// 	}
+			// });
 		},
 		//点击搜索框，跳转搜索页面
 		onNavigationBarSearchInputClicked() {
@@ -298,35 +347,50 @@
 				},
 			// #endif
 			sl(index){//上拉加载时
-			console.log(this.newslist[index].loadtext)
-				if(this.newslist[index].loadtext!="上拉加载更多"){
+			// console.log(this.newslist[index].loadtext)
+				// if(this.newslist[index].loadtext!="上拉加载更多"){
+				// 	return false;//等于上拉加载触发方法，不等于就阻止触发
+				// }
+				// this.newslist[index].loadtext="加载中。。。";
+				// if(this.newslist[index].list.length>8){//有点问题
+				// 	this.newslist[index].loadtext="我是有底线的~";
+				// 	return false;
+				// }
+				if(this.list[index].loadtext!="上拉加载更多"){
 					return false;//等于上拉加载触发方法，不等于就阻止触发
 				}
-				this.newslist[index].loadtext="加载中。。。";
-				if(this.newslist[index].list.length>8){//有点问题
-					this.newslist[index].loadtext="我是有底线的~";
-					return false;
-				}
-				setTimeout(()=>{
-					let obj={
-						pic:'../../static/demo/userpic/12.jpg',
-						name:'昵称',
-						isGuanZhu:true,
-						title:'我是标题',
-						titlePic:'../../static/demo/datapic/11.jpg',
-						type:'video',//img图文 video视屏
-						paly:'20w',
-						lang:'02:17',
-						infonum:{
-							index:1,//0 为没有操作 1为顶加1 2为踩一下
-							ding:10,
-							cai:10
-						},
-						ping:34,
-						share:17
-					};
-					this.newslist[index].list.push(obj);
-				},500)
+				this.list[index].loadtext="加载中。。。";
+				
+				// setTimeout(()=>{
+					// let obj={
+					// 	pic:'../../static/demo/userpic/12.jpg',
+					// 	name:'昵称',
+					// 	isGuanZhu:true,
+					// 	title:'我是标题',
+					// 	titlePic:'../../static/demo/datapic/11.jpg',
+					// 	type:'video',//img图文 video视屏
+					// 	paly:'20w',
+					// 	lang:'02:17',
+					// 	infonum:{
+					// 		index:1,//0 为没有操作 1为顶加1 2为踩一下
+					// 		ding:10,
+					// 		cai:10
+					// 	},
+					// 	ping:34,
+					// 	share:17
+					// };
+					// this.newslist[index].list.push(obj);
+					uniCloud.callFunction({
+						name:'addList',
+						success: (res) => {
+							console.log(res);
+							const obj=res.result.data[0];
+							this.list[index].list.push(obj);
+							this.list[index].loadtext="我是有底线的~";
+						}
+					});
+					
+				// },500)
 				
 			},
 			nav(k){//顶部导航
